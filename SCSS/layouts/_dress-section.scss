@@ -1,0 +1,92 @@
+@use "../utils/variables";
+.dress-section {
+  padding: 12px 0 78px 0;
+  @media screen and (min-width: variables.$bp-mobile) {
+    padding: 60px 0;
+  }
+  &__container {
+    background-color: variables.$color-fife;
+    border-radius: 20px;
+    padding: 30px 24px;
+    @media screen and (min-width: variables.$bp-tablet) {
+      padding: 70px 64px;
+      border-radius: 40px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    @media screen and (min-width: variables.$bp-desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+    height: 190px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    @media screen and (min-width: variables.$bp-mobile) {
+      width: 684px;
+      height: 289px;
+    }
+    @media screen and (min-width: variables.$bp-tablet) {
+      width: 684px;
+      height: 289px;
+    }
+
+    @media screen and (min-width: variables.$bp-desktop) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__img-title {
+    font-size: clamp(1.5rem, 1rem + 2vw, 2.15rem);
+    font-weight: 900;
+    color: variables.$color-one;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    &--accept {
+      left: auto;
+      right: 25px;
+    }
+  }
+}
+
+.dress-section__link:hover .dress-section__img {
+  transform: none;
+  @media screen and (min-width: variables.$bp-desktop) {
+    transform: scale(1.1);
+  }
+}

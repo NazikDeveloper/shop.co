@@ -1,0 +1,65 @@
+@use "../utils/variables";
+.filter-style {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  &__group {
+    border-bottom: 1px solid variables.$color-fife;
+    position: relative;
+  }
+
+  &__btn-category {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: variables.$color-six;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: variables.$color-thirtieth;
+      }
+    }
+  }
+
+  &__btn-category.is-open .vector-direction {
+    transform: rotate(180deg);
+  }
+
+  &__sub-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    min-width: 180px;
+    padding: 12px;
+    background-color: variables.$color-two;
+    border: 1px solid variables.$color-twenty-seven;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px variables.$color-twenty-eight;
+    z-index: 10;
+  }
+
+  &__sub-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: variables.$color-twenty-nine;
+    cursor: pointer;
+  }
+}

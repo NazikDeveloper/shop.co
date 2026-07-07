@@ -1,0 +1,57 @@
+@use "../utils/variables";
+.search-sidebar {
+  position: fixed;
+  z-index: 988;
+  width: 100%;
+  top: 80px;
+  right: 0;
+  background-color: transparent;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+
+  &.is-hidden {
+    transform: translateX(100%);
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__form-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-search {
+    position: absolute;
+    left: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: variables.$color-one;
+    cursor: pointer;
+  }
+
+  &__input {
+    display: block;
+    padding: 10px 35px 10px 54px;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+
+  &__btn-close.btn-close {
+    position: absolute;
+    right: 15px;
+    border: none;
+    width: 16px;
+    height: 16px;
+    color: variables.$color-one;
+  }
+}

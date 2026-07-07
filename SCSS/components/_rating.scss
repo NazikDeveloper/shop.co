@@ -1,0 +1,18 @@
+@use "../utils/variables";
+.rating {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  &__icon {
+    width: clamp(70px, 8vw, 175px);
+    height: clamp(16px, 2vw, 18px);
+  }
+  &__value {
+    font-size: clamp(12px, 2vw, 16px);
+  }
+  &__accept {
+    opacity: 0.6;
+  }
+}

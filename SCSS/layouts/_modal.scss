@@ -1,0 +1,130 @@
+
+@use "../utils/variables";
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: variables.$color-twentieth;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 20px 15px;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+  z-index: 995;
+
+  &.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 700px;
+  background-color: variables.$color-twenty-first;
+  border-radius: 15px;
+  padding: 30px 60px;
+  overflow-y: auto;
+
+  @media screen and (min-width: variables.$bp-mobile) {
+    padding: 80px;
+  }
+
+  @media screen and (min-width: variables.$bp-tablet) {
+    padding: 80px 128px 115px 128px;
+  }
+
+  &__btn-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    color: variables.$color-two;
+    background-color: variables.$color-one;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 500;
+    color: variables.$color-one;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 34px;
+    }
+  }
+
+  &__lable {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: variables.$color-one;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 16px;
+    }
+  }
+
+  &__input {
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid variables.$color-one;
+    border-radius: 8px;
+    font-size: 15px;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 16px;
+      padding: 15px 20px;
+    }
+
+    &:focus-visible {
+      outline: none;
+      border: 1px solid variables.$color-thirteen;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    color: variables.$color-one;
+    display: inline-block;
+    width: 100%;
+    margin: 8px 0 24px 0;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 13px;
+    }
+  }
+
+  &__sing-up-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 15px;
+    width: 100%;
+    max-width: 120px;
+    font-size: 14px;
+    cursor: pointer;
+
+    @media screen and (min-width: variables.$bp-mobile) {
+      padding: 15px 20px;
+      width: 100%;
+      max-width: 150px;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use "../utils/variables";
+.twitter-link,
+.facebook-link,
+.instagram-link,
+.git-hub-link {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid variables.$color-six;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover,
+    &:hover,
+    &:hover,
+    &:hover {
+      box-shadow: 0 0 5px 5px variables.$color-three;
+    }
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+
+  &--accept {
+    background-color: variables.$color-one;
+  }
+  &--social {
+    width: 28px;
+    height: 28px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

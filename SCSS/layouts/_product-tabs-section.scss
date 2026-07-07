@@ -1,0 +1,126 @@
+@use "../utils/variables";
+.product-tabs-section {
+  padding: 40px 0 25px 0;
+  @media screen and (min-width: variables.$bp-tablet) {
+    padding: 40px 0 50px 0;
+  }
+  &__button-tabs-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 2px solid variables.$color-four;
+    margin-bottom: 32px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      justify-content: space-around;
+    }
+  }
+
+  &__btn-tabs {
+    padding: 0;
+    font-size: clamp(16px, 2vw, 20px);
+    color: variables.$color-six;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+    &--active {
+      color: variables.$color-one;
+      border-bottom: 2px solid variables.$color-one;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: variables.$color-one;
+      }
+    }
+  }
+  &__all-reviews-container {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+  &__reviews-nav {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 24px;
+  }
+
+  &__reviews-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__reviews-title {
+    font-size: clamp(20px, 2vw, 24px);
+    font-weight: 700;
+  }
+
+  &__reviews-counts {
+    color: variables.$color-six;
+    font-size: clamp(14px, 2vw, 16px);
+  }
+
+  &__reviews-btn-filter {
+    margin-left: auto;
+    background-color: variables.$color-fife;
+    transition:
+      color 0.3s ease,
+      background-color 0.3s ease;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: variables.$color-one;
+        color: variables.$color-two;
+      }
+    }
+  }
+  &__all-reviews-list {
+    display: flex;
+    align-items: stretch;
+    gap: 20px 20px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+  }
+
+  &__all-reviews-item {
+    padding: 28px 32px;
+    border: 1px solid variables.$color-four;
+    border-radius: 20px;
+    flex-basis: 100%;
+    @media screen and (min-width: variables.$bp-mobile) {
+      flex-basis: calc((100% - 20px) / 2);
+    }
+  }
+  &__rating-icon {
+    width: clamp(70px, 8vw, 175px);
+    height: clamp(16px, 2vw, 18px);
+  }
+  &__title-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  &__card-title {
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  &__review {
+    max-width: 522px;
+    width: 100%;
+    line-height: 1.37;
+    color: variables.$color-six;
+    margin-bottom: 24px;
+    font-size: clamp(14px, 2vw, 16px);
+  }
+
+  &__post-date {
+    color: variables.$color-six;
+    font-size: clamp(14px, 2vw, 16px);
+  }
+}

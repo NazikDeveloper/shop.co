@@ -1,0 +1,70 @@
+@use "../utils/variables";
+.filter-sizes {
+  margin: 48px 0;
+  position: relative;
+  &::before {
+    content: "";
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: variables.$color-four;
+    position: absolute;
+    top: -24px;
+  }
+
+  &::after {
+    content: "";
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: variables.$color-four;
+    position: absolute;
+    bottom: -24px;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 8px;
+    margin-top: 20px;
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+
+  &__label {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 62px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: variables.$color-fife;
+    color: variables.$color-six;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: variables.$color-one;
+        color: variables.$color-two;
+      }
+    }
+  }
+}
+
+.filter-sizes__input:focus + .filter-sizes__label {
+  outline: 2px solid variables.$color-one;
+  outline-offset: 2px;
+}
+
+.filter-sizes__input:checked + .filter-sizes__label {
+  background-color: variables.$color-one;
+  color: variables.$color-two;
+}

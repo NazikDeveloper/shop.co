@@ -1,0 +1,56 @@
+@use "../utils/variables";
+.pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 52px;
+  &__btn-prev,
+  &__btn-next {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: variables.$color-one;
+    font-weight: 400;
+    line-height: 1.42;
+    border-radius: 8px;
+    border: 1px solid variables.$color-four;
+    background-color: transparent;
+    cursor: pointer;
+    transition:
+      color 0.3s ease,
+      background-color 0.3s ease;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled) {
+      background-color: variables.$color-one;
+      color: variables.$color-two;
+    }
+  }
+  &__page {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  &__page-btn {
+    padding: 10px 12px;
+    color: variables.$color-twentieth;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &--active {
+      background-color: variables.$color-thirty-second;
+      border-radius: 5px;
+      color: variables.$color-one;
+    }
+  }
+}

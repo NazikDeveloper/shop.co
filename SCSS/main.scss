@@ -1,0 +1,49 @@
+@use "./base";
+@use "./utils/fonts";
+@use "./utils/utils";
+@use "./utils/variables";
+
+@use "./layouts/container";
+@use "./layouts/section";
+@use "./layouts/header";
+@use "./layouts/mobile-menu";
+@use "./layouts/hero-section";
+@use "./layouts/brands-section";
+@use "./layouts/arrivals-section";
+@use "./layouts/selling-section";
+@use "./layouts/dress-section";
+@use "./layouts/customers-section";
+@use "./layouts/footer";
+@use "./layouts/modal";
+
+@use "./components/buttons";
+@use "./components/search";
+@use "./components/card-shop";
+@use "./components/rating";
+@use "./components/links";
+@use "./components/price";
+@use "./components/modal-search";
+@use "./components/modal-user";
+
+// page t-shirts
+@use "./layouts/t-shirts-section";
+@use "./layouts/product-gallery";
+@use "./layouts/might-also-section";
+@use "./layouts/product-color";
+@use "./layouts/product-size";
+@use "./layouts/plus-minus-container";
+@use "./layouts/product-tabs-section";
+@use "./layouts/dropdown-latest";
+
+// page casul
+@use "./layouts/casual-section";
+@use "./layouts/filter-clothing-block";
+@use "./layouts/filter-price-block";
+@use "./layouts/filter-color-block";
+@use "./layouts/filter-size-block";
+@use "./layouts/filter-style-block";
+@use "./layouts/pagination-block";
+
+// page cart
+@use "./layouts/cart-section";
+@use "./layouts/order-summary";

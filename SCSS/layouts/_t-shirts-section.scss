@@ -1,0 +1,73 @@
+@use "../utils/variables";
+.t-shirt-section {
+  padding: 20px 0 25px 0;
+  @media screen and (min-width: variables.$bp-tablet) {
+    padding: 55px 0 40px 0;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    @media screen and (min-width: variables.$bp-desktop) {
+      justify-content: space-between;
+      align-items: stretch;
+      flex-direction: row;
+      gap: 0;
+    }
+  }
+  &__title {
+    font-size: 28px;
+    font-weight: 900;
+    color: variables.$color-one;
+    line-height: 1.16;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 42px;
+      margin-bottom: 10px;
+      line-height: 1.23;
+    }
+  }
+
+  &__price-box {
+    margin-top: 12px;
+    max-width: 160px;
+    width: 100%;
+    @media screen and (min-width: variables.$bp-mobile) {
+      max-width: 170px;
+      width: 100%;
+    }
+    @media screen and (min-width: variables.$bp-tablet) {
+      max-width: 220px;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    font-size: clamp(14px, 1.5vw, 16px);
+    color: variables.$color-one;
+    opacity: 0.6;
+    max-width: 590px;
+    line-height: 1.37;
+    margin-top: 17px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      max-width: 590px;
+      height: 2px;
+      background-color: variables.$color-four;
+      margin: 20px 0;
+    }
+  }
+  &__product-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 590px;
+    width: 100%;
+    gap: 20px;
+  }
+}

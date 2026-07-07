@@ -1,0 +1,133 @@
+@use "../utils/variables";
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: variables.$color-twenty-first;
+  transform: translateX(0);
+  transition: transform 0.3s;
+  z-index: 1000;
+
+  &.is-hidden {
+    transform: translateX(100%);
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__logo-mobile {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    font-size: 20px;
+    font-weight: 900;
+    color: variables.$color-one;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 54px;
+    left: 24px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: variables.$color-one;
+    font-weight: 400;
+  }
+  &__item {
+    position: relative;
+  }
+
+  &__shop-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    color: variables.$color-one;
+  }
+  &__arrow {
+    transition: transform 0.3s ease;
+  }
+  &__shop-btn[aria-expanded="true"] &__arrow,
+  &__submenu-btn[aria-expanded="true"] &__arrow {
+    transform: rotate(180deg);
+  }
+
+  &__submenu {
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  &__submenu:not([hidden]) {
+    display: flex;
+  }
+
+  &__submenu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    font-size: 16px;
+    color: variables.$color-one;
+
+    cursor: pointer;
+  }
+
+  &__subsubmenu {
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 8px;
+    padding-left: 20px;
+  }
+
+  &__subsubmenu:not([hidden]) {
+    display: flex;
+  }
+
+  &__sublink {
+    font-size: 15px;
+    color: variables.$color-one;
+  }
+}

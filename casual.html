@@ -1,0 +1,1969 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casual</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__promo">
+        <div class="container">
+          <div class="header__promo-container">
+            <div class="header__promo-block">
+              <p class="header__offer">
+                Sign up and get 20% off to your first order.
+              </p>
+              <button class="btn-sign-up" type="button" data-toggle=".backdrop">
+                Sign Up Now
+              </button>
+            </div>
+            <button
+              class="btn-close promo-btn-close"
+              type="button"
+              aria-label="Закрити"
+            >
+              <svg width="13.3" height="13.3">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header__container">
+          <button
+            class="header__burger"
+            type="button"
+            data-toggle=".mobile-menu"
+          >
+            <svg class="header__burger-icon" width="18.75" height="14.25">
+              <use href="./images/icons.svg#menu-burger"></use>
+            </svg>
+          </button>
+          <a class="header__logo-site" href="./home.html">SHOP.CO</a>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__dropdown-block">
+                <button
+                  class="header__btn-dropdown"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="shop-menu"
+                >
+                  Shop
+
+                  <svg class="header__dropdown-icon" width="11.5" height="6.5">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </button>
+
+                <ul id="shop-menu" class="header__dropdown-menu" hidden>
+                  <li class="header__submenu-item">
+                    <button class="header__submenu-btn" type="button">
+                      Men
+
+                      <svg class="header__submenu-icon" width="6" height="10">
+                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                      </svg>
+                    </button>
+
+                    <ul class="header__submenu" hidden>
+                      <li>
+                        <a class="header__submenu-link" href="./tshirts.html"
+                          >T-Shirts</a
+                        >
+                      </li>
+                      <li>
+                        <a class="header__submenu-link" href="#">Hoodies</a>
+                      </li>
+                      <li>
+                        <a class="header__submenu-link" href="#">Jeans</a>
+                      </li>
+                      <li>
+                        <a class="header__submenu-link" href="#">Shoes</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="header__dropdown-link" href="#">Girl</a>
+                  </li>
+
+                  <li>
+                    <a class="header__dropdown-link" href="#">Children</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a class="header__link" href="#">On Sale</a></li>
+              <li><a class="header__link" href="#">New Arrivals</a></li>
+              <li><a class="header__link" href="#">Brands</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <form name="search-form" class="search__form">
+              <button class="search__btn" type="submit" aria-label="search">
+                <svg class="search__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-search"></use>
+                </svg>
+              </button>
+              <label class="visually-hidden" for="search-input"
+                >Search for products</label
+              >
+              <input
+                type="search"
+                class="search__input"
+                id="search-input"
+                placeholder="Search for products..."
+              />
+            </form>
+          </div>
+
+          <div class="header__icon-block">
+            <!-- -----------кнопка пошуку мобільна версія------------ -->
+            <button
+              class="header__btn-search"
+              type="button"
+              data-toggle=".search-sidebar"
+            >
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+            <!-- ------------------- -->
+            <a href="./cart.html" class="header__btn-cart" aria-label="cart">
+              <svg width="22.13" height="20.25">
+                <use href="./images/icons.svg#icon-cart"></use>
+              </svg>
+            </a>
+            <button
+              class="header__btn-user"
+              type="button"
+              aria-label="user"
+              data-toggle=".backdrop-user"
+            >
+              <svg width="20.25" height="20.25">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- ----------------------------------- -->
+          <div class="mobile-menu is-hidden">
+            <button
+              class="mobile-menu__btn-close menu-btn-close"
+              type="button"
+              data-toggle=".mobile-menu"
+            >
+              <svg class="mobile-menu__mobile-icon" width="15" height="15">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="mobile-menu__logo-mobile" href="./home.html">SHOP.CO</a>
+
+            <nav class="mobile-menu__nav">
+              <ul class="mobile-menu__menu">
+                <li class="mobile-menu__item">
+                  <button
+                    class="mobile-menu__link mobile-menu__shop-btn"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    Shop
+
+                    <svg class="mobile-menu__arrow" width="11.5" height="6.5">
+                      <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+
+                  <ul class="mobile-menu__submenu" hidden>
+                    <li class="mobile-menu__submenu-item">
+                      <button
+                        class="mobile-menu__submenu-btn"
+                        type="button"
+                        aria-expanded="false"
+                      >
+                        Men
+
+                        <svg
+                          class="mobile-menu__arrow"
+                          width="11.5"
+                          height="6.5"
+                        >
+                          <use href="./images/icons.svg#icon-Vector"></use>
+                        </svg>
+                      </button>
+
+                      <ul class="mobile-menu__subsubmenu" hidden>
+                        <li>
+                          <a class="mobile-menu__sublink" href="./tshirts.html">
+                            T-Shirts
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="mobile-menu__sublink" href="#"> Hoodies </a>
+                        </li>
+
+                        <li>
+                          <a class="mobile-menu__sublink" href="#"> Jeans </a>
+                        </li>
+
+                        <li>
+                          <a class="mobile-menu__sublink" href="#"> Shoes </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a class="mobile-menu__sublink" href="#"> Girl </a>
+                    </li>
+
+                    <li>
+                      <a class="mobile-menu__sublink" href="#"> Children </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a class="mobile-menu__link link" href="#"> On Sale </a>
+                </li>
+
+                <li>
+                  <a class="mobile-menu__link link" href="#"> New Arrivals </a>
+                </li>
+
+                <li>
+                  <a class="mobile-menu__link link" href="#"> Brands </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- --------------------------------------- -->
+        </div>
+      </div>
+      <!-- слайдер пошук -->
+      <div class="search-sidebar is-hidden">
+        <form name="search-sidebar" autocomplete="off">
+          <div class="search-sidebar__form-field">
+            <button class="search-sidebar__btn-search" type="submit">
+              <svg width="22" height="22">
+                <use href="./images/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+            <label
+              class="search-sidebar__label visually-hidden"
+              for="search-product"
+              >Search product</label
+            >
+            <input
+              class="search-sidebar__input"
+              id="search-product"
+              placeholder="Search product"
+              type="search"
+            />
+            <button
+              class="btn-close search-sidebar__btn-close"
+              data-toggle=".search-sidebar"
+              type="button"
+            >
+              <svg width="18" height="18">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- слайдер пошук -->
+    </header>
+    <main>
+      <section class="section casual-section">
+        <div class="container">
+          <div class="casual-section__main-container">
+            <aside class="casual-section__filter-container">
+              <h2 class="visually-hidden">Фільтрація товарів</h2>
+              <form id="filters-form">
+                <div class="casual-section__filter-title-block">
+                  <h3 class="casual-section__filter-title">Filters</h3>
+                  <button
+                    class="casual-section__btn-filter-close"
+                    type="button"
+                    aria-label="Close filters"
+                  >
+                    <svg width="15.76" height="15.76">
+                      <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="filter-clothing">
+                  <li class="filter-clothing__item">
+                    <button
+                      class="filter-clothing__btn-clothing"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="sub-tshirts"
+                    >
+                      T-shirts
+                      <svg
+                        class="dropdown-icon filter-clothing__vector-direction"
+                        width="11.5"
+                        height="6.5"
+                      >
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                      </svg>
+                    </button>
+                    <div id="sub-tshirts" class="filter-clothing__sub-content">
+                      <label class="filter-clothing__sub-label"
+                        ><input type="checkbox" name="tshirts" value="Plain" />
+                        Plain</label
+                      >
+                      <label class="filter-clothing__sub-label"
+                        ><input
+                          type="checkbox"
+                          name="tshirts"
+                          value="Graphic Tees"
+                        />
+                        Graphic Tees</label
+                      >
+                    </div>
+                  </li>
+                  <li class="filter-clothing__item">
+                    <button
+                      class="filter-clothing__btn-clothing"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="sub-shorts"
+                    >
+                      Shorts
+                      <svg
+                        class="dropdown-icon filter-clothing__vector-direction"
+                        width="11.5"
+                        height="6.5"
+                      >
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                      </svg>
+                    </button>
+                    <div id="sub-shorts" class="filter-clothing__sub-content">
+                      <label class="filter-clothing__sub-label"
+                        ><input type="checkbox" name="shorts" value="Denim" />
+                        Denim</label
+                      >
+                      <label class="filter-clothing__sub-label"
+                        ><input type="checkbox" name="shorts" value="Cargo" />
+                        Cargo</label
+                      >
+                    </div>
+                  </li>
+                  <li class="filter-clothing__item">
+                    <button
+                      class="filter-clothing__btn-clothing"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="sub-shirts"
+                    >
+                      Shirts
+                      <svg
+                        class="dropdown-icon filter-clothing__vector-direction"
+                        width="11.5"
+                        height="6.5"
+                      >
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                      </svg>
+                    </button>
+                    <div id="sub-shirts" class="filter-clothing__sub-content">
+                      <label class="filter-clothing__sub-label"
+                        ><input
+                          type="checkbox"
+                          name="shirts"
+                          value="Overshirt"
+                        />
+                        Overshirt</label
+                      >
+                      <label class="filter-clothing__sub-label"
+                        ><input
+                          type="checkbox"
+                          name="shirts"
+                          value="Dress Shirts"
+                        />
+                        Dress Shirts</label
+                      >
+                    </div>
+                  </li>
+                  <li class="filter-clothing__item">
+                    <button
+                      class="filter-clothing__btn-clothing"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="sub-hoodie"
+                    >
+                      Hoodie
+                      <svg
+                        class="dropdown-icon filter-clothing__vector-direction"
+                        width="11.5"
+                        height="6.5"
+                      >
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                      </svg>
+                    </button>
+                    <div id="sub-hoodie" class="filter-clothing__sub-content">
+                      <label class="filter-clothing__sub-label"
+                        ><input
+                          type="checkbox"
+                          name="hoodie"
+                          value="Oversized"
+                        />
+                        Oversized</label
+                      >
+                      <label class="filter-clothing__sub-label"
+                        ><input type="checkbox" name="hoodie" value="Zip-up" />
+                        Zip-up</label
+                      >
+                    </div>
+                  </li>
+                  <li class="filter-clothing__item">
+                    <button
+                      class="filter-clothing__btn-clothing"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="sub-jeans"
+                    >
+                      Jeans
+                      <svg
+                        class="dropdown-icon filter-clothing__vector-direction"
+                        width="11.5"
+                        height="6.5"
+                      >
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                      </svg>
+                    </button>
+                    <div id="sub-jeans" class="filter-clothing__sub-content">
+                      <label class="filter-clothing__sub-label"
+                        ><input type="checkbox" name="jeans" value="Straight" />
+                        Straight</label
+                      >
+                      <label class="filter-clothing__sub-label"
+                        ><input type="checkbox" name="jeans" value="Skinny" />
+                        Skinny</label
+                      >
+                    </div>
+                  </li>
+                </ul>
+                <div class="filter-price">
+                  <h3 class="filter-title">Price</h3>
+                  <div class="filter-price__input">
+                    <label class="visually-hidden" for="priceRange"
+                      >Виберіть ціну:</label
+                    >
+                    <input
+                      class="filter-price__slider"
+                      type="range"
+                      id="priceRange"
+                      name="priceRange"
+                      min="0"
+                      max="300"
+                      value="300"
+                      step="5"
+                    />
+                    <p class="filter-price__value">
+                      Choosed price:<span id="priceValue">300</span>$
+                    </p>
+                  </div>
+                </div>
+                <div class="filter-colors">
+                  <h3 class="filter-title">Colors</h3>
+                  <div class="filter-colors__list">
+                    <input
+                      class="filter-colors__input"
+                      type="radio"
+                      name="color"
+                      id="color-green"
+                    />
+                    <label
+                      class="filter-colors__label filter-colors__label--green"
+                      for="color-green"
+                      aria-label="green"
+                    ></label>
+                    <input
+                      class="filter-colors__input"
+                      type="radio"
+                      name="color"
+                      id="color-red"
+                    />
+                    <label
+                      class="filter-colors__label filter-colors__label--red"
+                      for="color-red"
+                      aria-label="red"
+                    ></label>
+                    <input
+                      class="filter-colors__input"
+                      type="radio"
+                      name="color"
+                      id="color-yellow"
+                    />
+                    <label
+                      class="filter-colors__label filter-colors__label--yellow"
+                      for="color-yellow"
+                      aria-label="yellow"
+                    ></label>
+                    <input
+                      class="filter-colors__input"
+                      type="radio"
+                      name="color"
+                      id="color-orange"
+                    />
+                    <label
+                      class="filter-colors__label filter-colors__label--orange"
+                      for="color-orange"
+                      aria-label="orange"
+                    ></label>
+                    <input
+                      class="filter-colors__input"
+                      type="radio"
+                      name="color"
+                      id="color-aqua"
+                    />
+                    <label
+                      class="filter-colors__label filter-colors__label--aqua"
+                      for="color-aqua"
+                      aria-label="aqua"
+                    ></label>
+                  </div>
+                  <div class="filter-colors__list">
+                    <input
+                      class="filter-colors__input"
+                      type="radio"
+                      name="color"
+                      id="color-blue"
+                    />
+                    <label
+                      class="filter-colors__label filter-colors__label--blue"
+                      for="color-blue"
+                      aria-label="blue"
+                    ></label>
+                    <input
+                      class="filter-colors__input"
+                      type="radio"
+                      name="color"
+                      id="color-purple"
+                    />
+                    <label
+                      class="filter-colors__label filter-colors__label--purple"
+                      for="color-purple"
+                      aria-label="purple"
+                    ></label>
+                    <input
+                      class="filter-colors__input"
+                      type="radio"
+                      name="color"
+                      id="color-pink"
+                    />
+                    <label
+                      class="filter-colors__label filter-colors__label--pink"
+                      for="color-pink"
+                      aria-label="pink"
+                    ></label>
+                    <input
+                      class="filter-colors__input"
+                      type="radio"
+                      name="color"
+                      id="color-white"
+                    />
+                    <label
+                      class="filter-colors__label filter-colors__label--white"
+                      for="color-white"
+                      aria-label="white"
+                    ></label>
+                    <input
+                      class="filter-colors__input"
+                      type="radio"
+                      name="color"
+                      id="color-black"
+                    />
+                    <label
+                      class="filter-colors__label filter-colors__label--black"
+                      for="color-black"
+                      aria-label="black"
+                    ></label>
+                  </div>
+                </div>
+                <div class="filter-sizes">
+                  <h3 class="filter-title filter-sizes__title">Size</h3>
+                  <div class="filter-sizes__block">
+                    <input
+                      class="filter-sizes__input"
+                      type="radio"
+                      name="size"
+                      id="size-xx-small"
+                    />
+                    <label class="filter-sizes__label" for="size-xx-small"
+                      >XX-Small</label
+                    >
+                    <input
+                      class="filter-sizes__input"
+                      type="radio"
+                      name="size"
+                      id="size-x-small"
+                    />
+                    <label class="filter-sizes__label" for="size-x-small"
+                      >X-Small</label
+                    >
+                    <input
+                      class="filter-sizes__input"
+                      type="radio"
+                      name="size"
+                      id="size-small"
+                    />
+                    <label class="filter-sizes__label" for="size-small"
+                      >Small</label
+                    >
+                    <input
+                      class="filter-sizes__input"
+                      type="radio"
+                      name="size"
+                      id="size-medium"
+                    />
+                    <label class="filter-sizes__label" for="size-medium"
+                      >Medium</label
+                    >
+                    <input
+                      class="filter-sizes__input"
+                      type="radio"
+                      name="size"
+                      id="size-large"
+                    />
+                    <label class="filter-sizes__label" for="size-large"
+                      >Large</label
+                    >
+                    <input
+                      class="filter-sizes__input"
+                      type="radio"
+                      name="size"
+                      id="size-x-large"
+                    />
+                    <label class="filter-sizes__label" for="size-x-large"
+                      >X-Large</label
+                    >
+                    <input
+                      class="filter-sizes__input"
+                      type="radio"
+                      name="size"
+                      id="size-xx-large"
+                    />
+                    <label class="filter-sizes__label" for="size-xx-large"
+                      >XX-Large</label
+                    >
+                    <input
+                      class="filter-sizes__input"
+                      type="radio"
+                      name="size"
+                      id="size-3x-large"
+                    />
+                    <label class="filter-sizes__label" for="size-3x-large"
+                      >3X-Large</label
+                    >
+                    <input
+                      class="filter-sizes__input"
+                      type="radio"
+                      name="size"
+                      id="size-4x-large"
+                    />
+                    <label class="filter-sizes__label" for="size-4x-large"
+                      >4X-Large</label
+                    >
+                  </div>
+                </div>
+                <div class="filter-style">
+                  <h3 class="filter-title">Dress Style</h3>
+                  <div class="filter-style__block">
+                    <div class="filter-style__group">
+                      <button
+                        class="filter-style__btn-category"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="style-casual"
+                      >
+                        <span>Casual</span>
+                        <svg
+                          class="dropdown-icon vector-direction"
+                          width="11.5"
+                          height="6.5"
+                        >
+                          <use href="./images/icons.svg#icon-Vector"></use>
+                        </svg>
+                      </button>
+                      <div id="style-casual" class="filter-style__sub-content">
+                        <label class="filter-style__sub-label"
+                          ><input
+                            type="checkbox"
+                            name="casual"
+                            value="t-shirts"
+                          />
+                          T-shirts</label
+                        >
+                        <label class="filter-style__sub-label"
+                          ><input
+                            type="checkbox"
+                            name="casual"
+                            value="shorts"
+                          />
+                          Shorts</label
+                        >
+                      </div>
+                    </div>
+                    <div class="filter-style__group">
+                      <button
+                        class="filter-style__btn-category"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="style-formal"
+                      >
+                        <span>Formal</span>
+                        <svg
+                          class="dropdown-icon vector-direction"
+                          width="11.5"
+                          height="6.5"
+                        >
+                          <use href="./images/icons.svg#icon-Vector"></use>
+                        </svg>
+                      </button>
+                      <div id="style-formal" class="filter-style__sub-content">
+                        <label class="filter-style__sub-label"
+                          ><input
+                            type="checkbox"
+                            name="formal"
+                            value="shirts"
+                          />
+                          Shirts</label
+                        >
+                        <label class="filter-style__sub-label"
+                          ><input type="checkbox" name="formal" value="suits" />
+                          Costumes</label
+                        >
+                      </div>
+                    </div>
+                    <div class="filter-style__group">
+                      <button
+                        class="filter-style__btn-category"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="style-party"
+                      >
+                        <span>Party</span>
+                        <svg
+                          class="dropdown-icon vector-direction"
+                          width="11.5"
+                          height="6.5"
+                        >
+                          <use href="./images/icons.svg#icon-Vector"></use>
+                        </svg>
+                      </button>
+                      <div id="style-party" class="filter-style__sub-content">
+                        <label class="filter-style__sub-label"
+                          ><input
+                            type="checkbox"
+                            name="party"
+                            value="dresses"
+                          />
+                          Dresses</label
+                        >
+                        <label class="filter-style__sub-label"
+                          ><input
+                            type="checkbox"
+                            name="party"
+                            value="jackets"
+                          />
+                          Jackets</label
+                        >
+                      </div>
+                    </div>
+                    <div class="filter-style__group">
+                      <button
+                        class="filter-style__btn-category"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="style-gym"
+                      >
+                        <span>Gym</span>
+                        <svg
+                          class="dropdown-icon vector-direction"
+                          width="11.5"
+                          height="6.5"
+                        >
+                          <use href="./images/icons.svg#icon-Vector"></use>
+                        </svg>
+                      </button>
+                      <div id="style-gym" class="filter-style__sub-content">
+                        <label class="filter-style__sub-label"
+                          ><input type="checkbox" name="gym" value="hoodies" />
+                          Hoodies</label
+                        >
+                        <label class="filter-style__sub-label"
+                          ><input type="checkbox" name="gym" value="pants" />
+                          Sweatpants</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn-apply-filter" type="submit">
+                  Apply Filter
+                </button>
+              </form>
+            </aside>
+            <div class="casual-section__backdrop"></div>
+            <div class="casual-section__content">
+              <div class="casual-section__title-box">
+                <h2 class="casual-section__title">Casual</h2>
+                <span class="casual-section__review-product"
+                  >Showing 1-10 of 100 Products</span
+                >
+                <button
+                  class="btn-filter casual-section__btn-filter"
+                  type="button"
+                >
+                  <svg width="20.25" height="18.75">
+                    <use href="./images/icons.svg#icon-filter"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="casual-section__block casual-section__block--active">
+                <ul class="casual-section__list">
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/gradient-graphic.webp    1x,
+                            ./images/gradient-graphic@2x.webp 2x
+                          "
+                          src="./images/gradient-graphic.webp"
+                          alt="Gradient Graphic T-shirt"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Gradient Graphic T-shirt</h3>
+                      <div class="rating">
+                        <svg width="80" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#three-starshaf"></use>
+                        </svg>
+                        <span>3.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$145</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/tipping-details.webp    1x,
+                            ./images/tipping-details@2x.webp 2x
+                          "
+                          src="./images/tipping-details.webp"
+                          alt="Polo with Tipping Details"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">
+                        Polo with Tipping Details++
+                      </h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-starshaf"></use>
+                        </svg>
+                        <span>4.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$180</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li
+                    class="casual-section__item casual-section__item--deleted"
+                  >
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/black-striped.webp    1x,
+                            ./images/black-striped@2x.webp 2x
+                          "
+                          src="./images/black-striped.webp"
+                          alt="Black Striped T-shirt"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Black Striped T-shirt</h3>
+                      <div class="rating">
+                        <svg width="113" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#five-stars"></use>
+                        </svg>
+                        <span>5.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$120</span>
+                        <span class="price__price price__price--old">$150</span>
+                        <span class="price__discount">-30%</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+                <ul class="casual-section__list">
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/skinny.webp    1x,
+                            ./images/skinny@2x.webp 2x
+                          "
+                          src="./images/skinny.webp"
+                          alt="SKINNY FIT JEANS"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Skinny Fit Jeans</h3>
+                      <div class="rating">
+                        <svg width="80" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#three-starshaf"></use>
+                        </svg>
+                        <span>3.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$240</span>
+                        <span class="price__price price__price--old">$260</span>
+                        <span class="price__discount">-20%</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/checkered.webp    1x,
+                            ./images/checkered@2x.webp 2x
+                          "
+                          src="./images/checkered.webp"
+                          alt="CHECKERED SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Checkered-Shirt+</h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-starshaf"></use>
+                        </svg>
+                        <span>4.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$180</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li
+                    class="casual-section__item casual-section__item--deleted"
+                  >
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/sleeve.webp    1x,
+                            ./images/sleeve@2x.webp 2x
+                          "
+                          src="./images/sleeve.webp"
+                          alt="SLEEVE STRIPED T-SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Sleeve Striped T-shirt</h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-starshaf"></use>
+                        </svg>
+                        <span>4.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$130</span>
+                        <span class="price__price price__price--old">$160</span>
+                        <span class="price__discount">-30%</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+                <ul class="casual-section__list">
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/vertical.webp    1x,
+                            ./images/vertical@2x.webp 2x
+                          "
+                          src="./images/vertical.webp"
+                          alt="VERTICAL STRIPED SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Vertical Striped Shirt</h3>
+                      <div class="rating">
+                        <svg width="113" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#five-stars"></use>
+                        </svg>
+                        <span>5.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$212</span>
+                        <span class="price__price price__price--old">$232</span>
+                        <span class="price__discount">-20%</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/courage.webp    1x,
+                            ./images/courage@2x.webp 2x
+                          "
+                          src="./images/courage.webp"
+                          alt="COURAGE GRAPHIC T-SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Courage Graphic++</h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-stars"></use>
+                        </svg>
+                        <span>4.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$145</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li
+                    class="casual-section__item casual-section__item--deleted"
+                  >
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/loose.webp    1x,
+                            ./images/loose@2x.webp 2x
+                          "
+                          src="./images/loose.webp"
+                          alt="LOOSE FIT BERMUDA SHORTS"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Loose Fit Bermuda Shorts</h3>
+                      <div class="rating">
+                        <svg width="66" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#three-stars"></use>
+                        </svg>
+                        <span>3.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$80</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <div class="casual-section__block">
+                <ul class="casual-section__list">
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/gradient-graphic.webp    1x,
+                            ./images/gradient-graphic@2x.webp 2x
+                          "
+                          src="./images/gradient-graphic.webp"
+                          alt="Gradient Graphic T-shirt"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Gradient Graphic T-shirt</h3>
+                      <div class="rating">
+                        <svg width="80" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#three-starshaf"></use>
+                        </svg>
+                        <span>3.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$145</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/tipping-details.webp    1x,
+                            ./images/tipping-details@2x.webp 2x
+                          "
+                          src="./images/tipping-details.webp"
+                          alt="Polo with Tipping Details"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">
+                        Polo with Tipping Details__
+                      </h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-starshaf"></use>
+                        </svg>
+                        <span>4.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$180</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li
+                    class="casual-section__item casual-section__item--deleted"
+                  >
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/black-striped.webp    1x,
+                            ./images/black-striped@2x.webp 2x
+                          "
+                          src="./images/black-striped.webp"
+                          alt="Black Striped T-shirt"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Black Striped T-shirt</h3>
+                      <div class="rating">
+                        <svg width="113" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#five-stars"></use>
+                        </svg>
+                        <span>5.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$120</span>
+                        <span class="price__price price__price--old">$150</span>
+                        <span class="price__discount">-30%</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+                <ul class="casual-section__list">
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/skinny.webp    1x,
+                            ./images/skinny@2x.webp 2x
+                          "
+                          src="./images/skinny.webp"
+                          alt="SKINNY FIT JEANS"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Skinny Fit Jeans</h3>
+                      <div class="rating">
+                        <svg width="80" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#three-starshaf"></use>
+                        </svg>
+                        <span>3.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$240</span>
+                        <span class="price__price price__price--old">$260</span>
+                        <span class="price__discount">-20%</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/checkered.webp    1x,
+                            ./images/checkered@2x.webp 2x
+                          "
+                          src="./images/checkered.webp"
+                          alt="CHECKERED SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Checkered-Shirt__</h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-starshaf"></use>
+                        </svg>
+                        <span>4.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$180</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li
+                    class="casual-section__item casual-section__item--deleted"
+                  >
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/sleeve.webp    1x,
+                            ./images/sleeve@2x.webp 2x
+                          "
+                          src="./images/sleeve.webp"
+                          alt="SLEEVE STRIPED T-SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Sleeve Striped T-shirt</h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-starshaf"></use>
+                        </svg>
+                        <span>4.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$130</span>
+                        <span class="price__price price__price--old">$160</span>
+                        <span class="price__discount">-30%</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+                <ul class="casual-section__list">
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/vertical.webp    1x,
+                            ./images/vertical@2x.webp 2x
+                          "
+                          src="./images/vertical.webp"
+                          alt="VERTICAL STRIPED SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Vertical Striped Shirt</h3>
+                      <div class="rating">
+                        <svg width="113" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#five-stars"></use>
+                        </svg>
+                        <span>5.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$212</span>
+                        <span class="price__price price__price--old">$232</span>
+                        <span class="price__discount">-20%</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/courage.webp    1x,
+                            ./images/courage@2x.webp 2x
+                          "
+                          src="./images/courage.webp"
+                          alt="COURAGE GRAPHIC T-SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Courage Graphic__</h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-stars"></use>
+                        </svg>
+                        <span>4.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$145</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li
+                    class="casual-section__item casual-section__item--deleted"
+                  >
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/loose.webp    1x,
+                            ./images/loose@2x.webp 2x
+                          "
+                          src="./images/loose.webp"
+                          alt="LOOSE FIT BERMUDA SHORTS"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">
+                        Loose Fit Bermuda Shorts---
+                      </h3>
+                      <div class="rating">
+                        <svg width="66" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#three-stars"></use>
+                        </svg>
+                        <span>3.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$80</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <div class="casual-section__block">
+                <ul class="casual-section__list">
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/gradient-graphic.webp    1x,
+                            ./images/gradient-graphic@2x.webp 2x
+                          "
+                          src="./images/gradient-graphic.webp"
+                          alt="Gradient Graphic T-shirt"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Gradient Graphic T-shirt</h3>
+
+                      <div class="rating">
+                        <svg width="80" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#three-starshaf"></use>
+                        </svg>
+                        <span>3.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$145</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/tipping-details.webp    1x,
+                            ./images/tipping-details@2x.webp 2x
+                          "
+                          src="./images/tipping-details.webp"
+                          alt="Polo with Tipping Details"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">
+                        Polo with Tipping Details--
+                      </h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-starshaf"></use>
+                        </svg>
+                        <span>4.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$180</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li
+                    class="casual-section__item casual-section__item--deleted"
+                  >
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/black-striped.webp    1x,
+                            ./images/black-striped@2x.webp 2x
+                          "
+                          src="./images/black-striped.webp"
+                          alt="Black Striped T-shirt"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Black Striped T-shirt</h3>
+                      <div class="rating">
+                        <svg width="113" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#five-stars"></use>
+                        </svg>
+                        <span>5.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$120</span>
+                        <span class="price__price price__price--old">$150</span>
+                        <span class="price__discount">-30%</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+                <ul class="casual-section__list">
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/skinny.webp    1x,
+                            ./images/skinny@2x.webp 2x
+                          "
+                          src="./images/skinny.webp"
+                          alt="SKINNY FIT JEANS"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Skinny Fit Jeans</h3>
+                      <div class="rating">
+                        <svg width="80" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#three-starshaf"></use>
+                        </svg>
+                        <span>3.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$240</span>
+                        <span class="price__price price__price--old">$260</span>
+                        <span class="price__discount">-20%</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/checkered.webp    1x,
+                            ./images/checkered@2x.webp 2x
+                          "
+                          src="./images/checkered.webp"
+                          alt="CHECKERED SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Checkered-Shirt--</h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-starshaf"></use>
+                        </svg>
+                        <span>4.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$180</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li
+                    class="casual-section__item casual-section__item--deleted"
+                  >
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/sleeve.webp    1x,
+                            ./images/sleeve@2x.webp 2x
+                          "
+                          src="./images/sleeve.webp"
+                          alt="SLEEVE STRIPED T-SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Sleeve Striped T-shirt</h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-starshaf"></use>
+                        </svg>
+                        <span>4.5/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$130</span>
+                        <span class="price__price price__price--old">$160</span>
+                        <span class="price__discount">-30%</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+                <ul class="casual-section__list">
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          class="card-shop__img"
+                          width="295"
+                          height="298"
+                          srcset="
+                            ./images/vertical.webp    1x,
+                            ./images/vertical@2x.webp 2x
+                          "
+                          src="./images/vertical.webp"
+                          alt="VERTICAL STRIPED SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Vertical Striped Shirt</h3>
+                      <div class="rating">
+                        <svg width="113" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#five-stars"></use>
+                        </svg>
+                        <span>5.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$212</span>
+                        <span class="price__price price__price--old">$232</span>
+                        <span class="price__discount">-20%</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="casual-section__item">
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="#">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/courage.webp    1x,
+                            ./images/courage@2x.webp 2x
+                          "
+                          src="./images/courage.webp"
+                          alt="COURAGE GRAPHIC T-SHIRT"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">Courage Graphic--</h3>
+                      <div class="rating">
+                        <svg width="104" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#four-stars"></use>
+                        </svg>
+                        <span>4.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$145</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li
+                    class="casual-section__item casual-section__item--deleted"
+                  >
+                    <article class="card-shop">
+                      <a class="card-shop__link" href="">
+                        <img
+                          width="295"
+                          height="298"
+                          class="card-shop__img"
+                          srcset="
+                            ./images/loose.webp    1x,
+                            ./images/loose@2x.webp 2x
+                          "
+                          src="./images/loose.webp"
+                          alt="LOOSE FIT BERMUDA SHORTS"
+                        />
+                      </a>
+                      <h3 class="card-shop__title">
+                        Loose Fit Bermuda Shorts++
+                      </h3>
+                      <div class="rating">
+                        <svg width="66" height="18" fill="#FFC633">
+                          <use href="./images/icons.svg#three-stars"></use>
+                        </svg>
+                        <span>3.0/<span class="rating__accept">5</span></span>
+                      </div>
+                      <div class="price">
+                        <span class="price__price">$80</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <div class="pagination">
+                <button class="pagination__btn-prev" type="button">
+                  <svg width="11.67" height="11.67">
+                    <use href="./images/icons.svg#icon-previous"></use>
+                  </svg>
+                  Previous
+                </button>
+                <ul class="pagination__page">
+                  <li>
+                    <button
+                      class="pagination__page-btn pagination__page-btn--active"
+                      data-page="0"
+                    >
+                      1
+                    </button>
+                  </li>
+                  <li>
+                    <button class="pagination__page-btn" data-page="1">
+                      2
+                    </button>
+                  </li>
+                  <li>
+                    <button class="pagination__page-btn" data-page="2">
+                      3
+                    </button>
+                  </li>
+                </ul>
+                <button class="pagination__btn-next" type="button">
+                  Next
+                  <svg width="11.67" height="11.67">
+                    <use href="./images/icons.svg#icon-next"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer casual-section__footer">
+      <div class="container">
+        <div class="footer__offers-container">
+          <h2 class="footer__offers-title">
+            STAY UPTO DATE ABOUT OUR LATEST OFFERS
+          </h2>
+          <form
+            class="footer__input-block"
+            name="offers-form"
+            autocomplete="off"
+          >
+            <div class="footer__input-box">
+              <label class="visually-hidden" for="user-email"
+                >Enter your email address</label
+              >
+              <svg class="footer__icon-email" width="24" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              <input
+                id="user-email"
+                type="email"
+                class="footer__input-email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <button class="btn-subscribe btn-subscribe--accept" type="submit">
+              Subscribe to Newsletter
+            </button>
+          </form>
+        </div>
+
+        <div class="footer__middle-container">
+          <div class="footer__info-block">
+            <a class="footer__logo" href="./home.html">SHOP.CO</a>
+            <p class="footer__logo-description">
+              We have clothes that suits your style and<br />
+              which you’re proud to wear. From<br />
+              women to men.
+            </p>
+            <div class="footer__icons-container">
+              <a
+                class="twitter-link twitter-link--social"
+                href="#"
+                aria-label="Go to Twitter profile"
+              >
+                <svg width="12" height="12">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a
+                class="facebook-link facebook-link--accept facebook-link--social"
+                href="#"
+                aria-label="Go to facebook profile"
+              >
+                <svg width="6.32" height="12.7" fill="#fff">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a
+                class="instagram-link instagram-link--social"
+                href="#"
+                aria-label="Go to Instagram profile"
+              >
+                <svg width="13.55" height="13.55">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a
+                class="git-hub-link git-hub-link--social"
+                href="#"
+                aria-label="Go to git-hub profile"
+              >
+                <svg width="12.96" height="12.65">
+                  <use href="./images/icons.svg#icon-git-hub"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__nav-block">
+            <div class="footer__nav-box">
+              <nav class="footer__nav">
+                <h3 class="footer__nav-title">Company</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">About</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Features</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Works</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Career</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__nav footer__nav--accept">
+                <h3 class="footer__nav-title">Help</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">Customer Support</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Delivery Details</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__nav-box">
+              <nav class="footer__nav">
+                <h3 class="footer__nav-title">FAQ</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">Account</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Manage Deliveries</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Orders</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Payments</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__nav">
+                <h3 class="footer__nav-title">Resources</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">Free eBooks</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Development Tutorial</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">How to - Blog</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Youtube Playlist</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__terms">
+            Shop.co &copy;2000-2023, All Rights Reserved
+          </p>
+          <div class="footer__cards-block">
+            <div class="footer__cards-bank">
+              <svg width="32.54" height="10.51" role="img" aria-label="Visa">
+                <use href="./images/icons.svg#visa"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg
+                width="25.38"
+                height="15.69"
+                role="img"
+                aria-label="Mastercard"
+              >
+                <use href="./images/icons.svg#mastercard"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg width="34.55" height="9.21" role="img" aria-label="Paypal">
+                <use href="./images/icons.svg#paypal"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg
+                width="26.41"
+                height="11.21"
+                role="img"
+                aria-label="Apple Pay"
+              >
+                <use href="./images/icons.svg#apple-pay"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg width="28.56" height="11.21" role="img" aria-label="G-pay">
+                <use href="./images/icons.svg#g-pay"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close" type="button" data-toggle=".backdrop">
+          <svg width="13.3" height="13.3">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Sign Up</h2>
+        <form class="modal__form" name="modal-form" autocomplete="off">
+          <div class="modal__container">
+            <label class="modal__lable" for="sing-up-email"
+              >Email or phone</label
+            >
+            <input
+              class="modal__input"
+              type="text"
+              id="sing-up-email"
+              name="sing-up-email"
+              minlength="3"
+              maxlength="20"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+            <span class="modal__text"
+              >Наприклад: my@email.com або 380XXXXXXXXX / 48XXXXXXXXX</span
+            >
+            <label class="modal__lable" for="sing-up-password">Password</label>
+            <input
+              class="modal__input"
+              type="password"
+              id="sing-up-password"
+              name="sing-up-password"
+              minlength="3"
+              maxlength="20"
+              required
+            />
+          </div>
+          <button class="modal__sing-up-btn sing-up-btn" type="submit">
+            Sing Up
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- modal user -->
+    <div class="backdrop-user is-hidden" role="dialog" aria-modal="true">
+      <div class="modal-user">
+        <button
+          class="modal-user__btn-close"
+          data-toggle=".backdrop-user"
+          type="button"
+        >
+          <svg width="15" height="15">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-user__title">Personal account</h2>
+        <form name="modal-user-form" autocomplete="off">
+          <div class="modal-user__form-field">
+            <label class="modal-user__label" for="user-name">E-mail:</label>
+            <input
+              type="email"
+              class="modal-user__email"
+              id="user-name"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="modal-user__form-field">
+            <label class="modal-user__label" for="user-password"
+              >Password:</label
+            >
+            <input
+              type="password"
+              class="modal-user__password"
+              id="user-password"
+              placeholder="password"
+              required
+            />
+          </div>
+
+          <button class="modal-user__btn-enter" type="submit">Enter</button>
+        </form>
+      </div>
+    </div>
+    <!-- modal user -->
+    <script type="module" src="./js/black-line.js"></script>
+    <script type="module" src="./js/open-close.js"></script>
+    <script type="module" src="./js/header-dropdown.js"></script>
+    <script type="module" src="./js/mobile-menu-shop-btn.js"></script>
+    <script type="module" src="./js/open-filter-block.js"></script>
+    <script type="module" src="./js/price-slider.js"></script>
+    <script type="module" src="./js/dress-style-slide.js"></script>
+    <script type="module" src="./js/pagination-slide.js"></script>
+  </body>
+</html>

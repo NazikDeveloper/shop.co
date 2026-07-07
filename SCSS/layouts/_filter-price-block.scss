@@ -1,0 +1,32 @@
+@use "../utils/variables";
+.filter-price {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 48px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: variables.$color-four;
+    position: absolute;
+    top: -24px;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: variables.$color-four;
+    position: absolute;
+    bottom: -24px;
+  }
+
+  &__slider {
+    width: 100%;
+    accent-color: variables.$color-one;
+    cursor: pointer;
+    margin: 20px 0 8px 0;
+  }
+}

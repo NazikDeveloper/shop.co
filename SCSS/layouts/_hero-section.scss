@@ -1,0 +1,91 @@
+@use "../utils/variables";
+.hero-section {
+  background-color: variables.$color-thirty-first;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    @media screen and (min-width: variables.$bp-desktop) {
+      justify-content: space-between;
+      flex-direction: row;
+      padding-top: 0;
+    }
+  }
+
+  &__information {
+    max-width: 680px;
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 54px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: variables.$bp-desktop) {
+      font-size: 64px;
+    }
+  }
+
+  &__description {
+    opacity: 60%;
+    font-size: 14px;
+    line-height: 1.42;
+    margin-bottom: 25px;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 16px;
+      max-width: 545px;
+      line-height: 1.5;
+    }
+  }
+  &__offers-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__brands-box {
+    padding: 0 8px;
+  }
+
+  &__box-title {
+    font-size: 24px;
+    font-weight: 700;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 32px;
+    }
+    @media screen and (min-width: variables.$bp-tablet) {
+      font-size: 40px;
+    }
+  }
+
+  &__box-text {
+    font-size: 12px;
+    opacity: 60%;
+    @media screen and (min-width: variables.$bp-mobile) {
+      font-size: 16px;
+    }
+  }
+
+  &__products-box {
+    padding: 5px;
+    @media screen and (min-width: variables.$bp-products-box) {
+      padding: 0 26px;
+      border-right: 1px solid variables.$color-four;
+      border-left: 1px solid variables.$color-four;
+    }
+  }
+}

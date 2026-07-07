@@ -1,0 +1,92 @@
+@use "../utils/variables";
+.filter-colors {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+
+  &__label {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--green {
+      background-color: variables.$color-twelve;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--red {
+      background-color: variables.$color-thirteen;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--yellow {
+      background-color: variables.$color-fourteen;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--orange {
+      background-color: variables.$color-fifteen;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--aqua {
+      background-color: variables.$color-sixteen;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--blue {
+      background-color: variables.$color-seventeen;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--purple {
+      background-color: variables.$color-eighteenth;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--pink {
+      background-color: variables.$color-nineteenth;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--white {
+      background-color: variables.$color-two;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--black {
+      background-color: variables.$color-one;
+    }
+  }
+
+  &__input:checked + &__label::after {
+    content: "✓";
+    color: variables.$color-two;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+.filter-colors__input:focus + .filter-colors__label {
+    outline: 2px solid variables.$color-one;
+    outline-offset: 2px;
+}
+.filter-colors__input:checked+.filter-colors__label--white::after {
+    color: variables.$color-one;
+}

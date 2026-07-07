@@ -1,0 +1,1132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop.Co</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__promo">
+        <div class="container">
+          <div class="header__promo-container">
+            <div class="header__promo-block">
+              <p class="header__offer">
+                Sign up and get 20% off to your first order.
+              </p>
+              <button class="btn-sign-up" type="button" data-toggle=".backdrop">
+                Sign Up Now
+              </button>
+            </div>
+            <button
+              class="btn-close promo-btn-close"
+              type="button"
+              aria-label="Закрити"
+            >
+              <svg width="13.3" height="13.3">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header__container">
+          <button
+            class="header__burger"
+            type="button"
+            data-toggle=".mobile-menu"
+          >
+            <svg class="header__burger-icon" width="18.75" height="14.25">
+              <use href="./images/icons.svg#menu-burger"></use>
+            </svg>
+          </button>
+          <a class="header__logo-site" href="./home.html">SHOP.CO</a>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__dropdown-block">
+                <button
+                  class="header__btn-dropdown"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="shop-menu"
+                >
+                  Shop
+
+                  <svg class="header__dropdown-icon" width="11.5" height="6.5">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </button>
+
+                <ul id="shop-menu" class="header__dropdown-menu" hidden>
+                  <li class="header__submenu-item">
+                    <button class="header__submenu-btn" type="button">
+                      Men
+
+                      <svg class="header__submenu-icon" width="6" height="10">
+                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                      </svg>
+                    </button>
+
+                    <ul class="header__submenu" hidden>
+                      <li>
+                        <a class="header__submenu-link" href="./tshirts.html">T-Shirts</a>
+                      </li>
+                      <li>
+                        <a class="header__submenu-link" href="#">Hoodies</a>
+                      </li>
+                      <li>
+                        <a class="header__submenu-link" href="#">Jeans</a>
+                      </li>
+                      <li>
+                        <a class="header__submenu-link" href="#">Shoes</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="header__dropdown-link" href="#">Girl</a>
+                  </li>
+
+                  <li>
+                    <a class="header__dropdown-link" href="#">Children</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a class="header__link" href="#">On Sale</a></li>
+              <li><a class="header__link" href="#">New Arrivals</a></li>
+              <li><a class="header__link" href="#">Brands</a></li>
+            </ul>
+          </nav>
+          <!-- --------------нове меню -->
+          <div class="search">
+            <form name="search-form" class="search__form">
+              <button class="search__btn" type="submit" aria-label="search">
+                <svg class="search__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-search"></use>
+                </svg>
+              </button>
+              <label class="visually-hidden" for="search-input"
+                >Search for products</label
+              >
+              <input
+                type="search"
+                class="search__input"
+                id="search-input"
+                placeholder="Search for products..."
+              />
+            </form>
+          </div>
+
+          <div class="header__icon-block">
+            <!-- -----------кнопка пошуку мобільна версія------------ -->
+            <button
+              class="header__btn-search"
+              type="button"
+              data-toggle=".search-sidebar"
+            >
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+            <!-- -----------кнопка пошуку мобільна версія------------ -->
+
+            <a href="./cart.html" class="header__btn-cart" aria-label="cart">
+              <svg width="22.13" height="20.25">
+                <use href="./images/icons.svg#icon-cart"></use>
+              </svg>
+            </a>
+            <button
+              class="header__btn-user"
+              type="button"
+              aria-label="user"
+              data-toggle=".backdrop-user"
+            >
+              <svg width="20.25" height="20.25">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- ----------------------------------- -->
+          <div class="mobile-menu is-hidden">
+            <button
+              class="mobile-menu__btn-close menu-btn-close"
+              type="button"
+              data-toggle=".mobile-menu"
+            >
+              <svg class="mobile-menu__mobile-icon" width="15" height="15">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="mobile-menu__logo-mobile" href="./home.html">SHOP.CO</a>
+            <nav class="mobile-menu__nav">
+              <ul class="mobile-menu__menu">
+                <li class="mobile-menu__item">
+                  <button
+                    class="mobile-menu__link mobile-menu__shop-btn"
+                    type="button"  aria-expanded="false"
+                  >
+                    Shop
+
+                    <svg class="mobile-menu__arrow" width="11.5" height="6.5">
+                      <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+
+                  <ul class="mobile-menu__submenu" hidden>
+                    <li class="mobile-menu__submenu-item">
+                      <button class="mobile-menu__submenu-btn" type="button"  aria-expanded="false">
+                        Men
+
+                        <svg class="mobile-menu__arrow" width="11.5" height="6.5">
+                          <use href="./images/icons.svg#icon-Vector"></use>
+                        </svg>
+                      </button>
+
+                      <ul class="mobile-menu__subsubmenu" hidden>
+                        <li>
+                          <a class="mobile-menu__sublink" href="./tshirts.html">
+                            T-Shirts
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="mobile-menu__sublink" href="#"> Hoodies </a>
+                        </li>
+
+                        <li>
+                          <a class="mobile-menu__sublink" href="#"> Jeans </a>
+                        </li>
+
+                        <li>
+                          <a class="mobile-menu__sublink" href="#"> Shoes </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a class="mobile-menu__sublink" href="#"> Girl </a>
+                    </li>
+
+                    <li>
+                      <a class="mobile-menu__sublink" href="#"> Children </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a class="mobile-menu__link link" href="#"> On Sale </a>
+                </li>
+
+                <li>
+                  <a class="mobile-menu__link link" href="#"> New Arrivals </a>
+                </li>
+
+                <li>
+                  <a class="mobile-menu__link link" href="#"> Brands </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- --------------------------------------- -->
+        </div>
+      </div>
+      <div class="search-sidebar is-hidden">
+        <form name="search-sidebar" autocomplete="off">
+          <div class="search-sidebar__form-field">
+            <button class="search-sidebar__btn-search" type="submit">
+              <svg width="22" height="22">
+                <use href="./images/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+            <label
+              class="search-sidebar__label visually-hidden"
+              for="search-product"
+              >Search product</label
+            >
+            <input
+              class="search-sidebar__input"
+              id="search-product"
+              placeholder="Search product"
+              type="search"
+            />
+            <button
+              class="btn-close search-sidebar__btn-close"
+              data-toggle=".search-sidebar"
+              type="button"
+            >
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-section__container">
+            <div>
+              <div class="hero-section__information">
+                <h1 class="hero-section__title">
+                  find clothes that matches your style
+                </h1>
+                <p class="hero-section__description">
+                  Browse through our diverse range of meticulously crafted
+                  garments, designed to bring out your individuality and cater
+                  to your sense of style.
+                </p>
+                <button
+                  class="btn-shop-now btn-shop-now--full-width"
+                  type="button"
+                >
+                  Shop Now
+                </button>
+              </div>
+
+              <div class="hero-section__offers-block">
+                <div class="hero-section__brands-box">
+                  <span class="hero-section__box-title">200+</span>
+                  <p class="hero-section__box-text">International Brands</p>
+                </div>
+                <div class="hero-section__products-box">
+                  <span class="hero-section__box-title">2,000+</span>
+                  <p class="hero-section__box-text">High-Quality Products</p>
+                </div>
+                <div class="hero-section__brands-box">
+                  <span class="hero-section__box-title">30,000+</span>
+                  <p class="hero-section__box-text">Happy Customers</p>
+                </div>
+              </div>
+            </div>
+            <picture class="hero-section__img">
+              <source srcset="./images/hero-image.avif" type="image/avif" />
+              <source srcset="./images/hero-image.webp" type="image/webp" />
+              <img
+                src="./images/hero-image.jpg"
+                alt="A man and a girl wearing elegant clothes"
+                width="634"
+                height="663"
+                loading="eager"
+                fetchpriority="high"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section brands-section">
+        <div class="container">
+          <h2 class="visually-hidden">Our Brands</h2>
+          <ul class="brands-section__list">
+            <li>
+              <a href="#">
+                <img
+                  class="brands-section__img"
+                  height="38"
+                  width="166"
+                  srcset="./images/versace.webp 1x, ./images/versace@2x.webp 2x"
+                  src="./images/versace.webp"
+                  alt="Versace logo"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="brands-section__img"
+                  height="38"
+                  width="91"
+                  srcset="./images/zara.webp 1x, ./images/zara@2x.webp 2x"
+                  src="./images/zara.webp"
+                  alt="Zara logo"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="brands-section__img"
+                  height="38"
+                  width="156"
+                  srcset="./images/gucci.webp 1x, ./images/gucci@2x.webp 2x"
+                  src="./images/gucci.webp"
+                  alt="Gucci logo"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="brands-section__img"
+                  height="38"
+                  width="194"
+                  srcset="./images/prada.webp 1x, ./images/prada@2x.webp 2x"
+                  src="./images/prada.webp"
+                  alt="Prada logo"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="brands-section__img"
+                  height="38"
+                  width="206"
+                  srcset="
+                    ./images/calvin-cline.webp    1x,
+                    ./images/calvin-cline@2x.webp 2x
+                  "
+                  src="./images/calvin-cline.webp"
+                  alt="Calvin Klein logo"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section arrivals-section">
+        <div class="container">
+          <h2 class="arrivals-section__title section__title">NEW ARRIVALS</h2>
+          <ul class="arrivals-section__list">
+            <li class="arrivals-section__items">
+              <article class="card-shop">
+                <a class="card-shop__link" href="#">
+                  <img
+                    class="card-shop__img"
+                    width="295"
+                    height="298"
+                    srcset="
+                      ./images/t-shirt.webp    1x,
+                      ./images/t-shirt@2x.webp 2x
+                    "
+                    src="./images/t-shirt.webp"
+                    alt="T-shirt with tape details"
+                  />
+                </a>
+                <h3 class="card-shop__title">T-shirt with Tape</h3>
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-starshaf"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >4.5/<span class="rating__accept">5</span></span
+                  >
+                </div>
+                <div class="price">
+                  <span class="price__price">$120</span>
+                </div>
+              </article>
+            </li>
+            <li class="arrivals-section__items">
+              <article class="card-shop">
+                <a class="card-shop__link" href="#">
+                  <img
+                    class="card-shop__img"
+                    width="295"
+                    height="298"
+                    srcset="./images/skinny.webp 1x, ./images/skinny@2x.webp 2x"
+                    src="./images/skinny.webp"
+                    alt="SKINNY FIT JEANS"
+                  />
+                </a>
+                <h3 class="card-shop__title">Skinny Fit Jeans</h3>
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#three-starshaf"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >3.5/<span class="rating__accept">5</span></span
+                  >
+                </div>
+                <div class="price">
+                  <span class="price__price">$240</span>
+                  <span class="price__price price__price--old">$260</span>
+                  <span class="price__discount">-20%</span>
+                </div>
+              </article>
+            </li>
+            <li
+              class="arrivals-section__items arrivals-section__items--deleted"
+            >
+              <article class="card-shop">
+                <a class="card-shop__link" href="#">
+                  <img
+                    class="card-shop__img"
+                    width="295"
+                    height="298"
+                    srcset="
+                      ./images/checkered.webp    1x,
+                      ./images/checkered@2x.webp 2x
+                    "
+                    src="./images/checkered.webp"
+                    alt="CHECKERED SHIRT"
+                  />
+                </a>
+                <h3 class="card-shop__title">Checkered-Shirt</h3>
+
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-starshaf"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >4.5/<span class="rating__accept">5</span></span
+                  >
+                </div>
+                <div class="price">
+                  <span class="price__price">$180</span>
+                </div>
+              </article>
+            </li>
+            <li class="arrivals-section__items arrivals-section__items--delete">
+              <article class="card-shop">
+                <a class="card-shop__link" href="#">
+                  <img
+                    class="card-shop__img"
+                    width="295"
+                    height="298"
+                    srcset="./images/sleeve.webp 1x, ./images/sleeve@2x.webp 2x"
+                    src="./images/sleeve.webp"
+                    alt="SLEEVE STRIPED T-SHIRT"
+                  />
+                </a>
+                <h3 class="card-shop__title">Sleeve Striped T-shirt</h3>
+
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-starshaf"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >4.5/<span class="rating__accept">5</span></span
+                  >
+                </div>
+                <div class="price">
+                  <span class="price__price">$130</span>
+                  <span class="price__price price__price--old">$160</span>
+                  <span class="price__discount">-30%</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="arrivals-section__wrapper">
+            <a class="btn-view-all" href="#">View All</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section selling-section">
+        <div class="container">
+          <h2 class="section__title selling-section__title">top selling</h2>
+          <ul class="selling-section__list">
+            <li class="selling-section__items">
+              <article class="card-shop">
+                <a class="card-shop__link" href="#">
+                  <img
+                    class="card-shop__img"
+                    width="295"
+                    height="298"
+                    srcset="
+                      ./images/vertical.webp    1x,
+                      ./images/vertical@2x.webp 2x
+                    "
+                    src="./images/vertical.webp"
+                    alt="VERTICAL STRIPED SHIRT"
+                  />
+                </a>
+                <h3 class="card-shop__title">Vertical Striped Shirt</h3>
+
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#five-stars"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >5.0/<span class="rating__accept">5</span></span
+                  >
+                </div>
+                <div class="price">
+                  <span class="price__price">$212</span>
+                  <span class="price__price price__price--old">$232</span>
+                  <span class="price__discount">-20%</span>
+                </div>
+              </article>
+            </li>
+            <li class="selling-section__items">
+              <article class="card-shop">
+                <a class="card-shop__link" href="#">
+                  <img
+                    width="295"
+                    height="298"
+                    class="card-shop__img"
+                    srcset="
+                      ./images/courage.webp    1x,
+                      ./images/courage@2x.webp 2x
+                    "
+                    src="./images/courage.webp"
+                    alt="COURAGE GRAPHIC T-SHIRT"
+                  />
+                </a>
+                <h3 class="card-shop__title">Courage Graphic T-Shirt</h3>
+
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-stars"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >4.0/<span class="rating__accept">5</span></span
+                  >
+                </div>
+                <span class="price__price">$145</span>
+              </article>
+            </li>
+            <li class="selling-section__items selling-section__items--deleted">
+              <article class="card-shop">
+                <a class="card-shop__link" href="">
+                  <img
+                    width="295"
+                    height="298"
+                    class="card-shop__img"
+                    srcset="./images/loose.webp 1x, ./images/loose@2x.webp 2x"
+                    src="./images/loose.webp"
+                    alt="LOOSE FIT BERMUDA SHORTS"
+                  />
+                </a>
+                <h3 class="card-shop__title">Loose Fit Bermuda Shorts</h3>
+
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#three-stars"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >3.0/<span class="rating__accept">5</span></span
+                  >
+                </div>
+                <span class="price__price">$80</span>
+              </article>
+            </li>
+            <li class="selling-section__items selling-section__items--delete">
+              <article class="card-shop">
+                <a class="card-shop__link" href="#">
+                  <img
+                    width="295"
+                    height="298"
+                    class="card-shop__img"
+                    srcset="./images/faded.webp 1x, ./images/faded@2x.webp 2x"
+                    src="./images/faded.webp"
+                    alt="FADED SKINNY JEANS"
+                  />
+                </a>
+                <h3 class="card-shop__title">Faded Skinny Jeans</h3>
+
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-starshaf"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >4.5/<span class="rating__accept">5</span></span
+                  >
+                </div>
+                <span class="price__price">$210</span>
+              </article>
+            </li>
+          </ul>
+          <div class="selling-section__btn-wrapper">
+            <a class="btn-view-all" href="#">View All</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dress-section">
+        <div class="container">
+          <div class="dress-section__container">
+            <h2 class="dress-section__title section__title">
+              BROWSE BY dress STYLE
+            </h2>
+            <div class="dress-section__block">
+              <div class="dress-section__box">
+                <a
+                  class="dress-section__link"
+                  href="/casual.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="dress-section__img"
+                    width="407"
+                    height="289"
+                    srcset="./images/casual.webp 1x, ./images/casual@2x.webp 2x"
+                    src="./images/casual.webp"
+                    alt="man in a gray t-shirt"
+                  />
+                  <span class="dress-section__img-title">Casual</span>
+                </a>
+                <a class="dress-section__link" href="#">
+                  <img
+                    class="dress-section__img"
+                    width="684"
+                    height="289"
+                    srcset="./images/formal.webp 1x, ./images/formal@2x.webp 2x"
+                    src="./images/formal.webp"
+                    alt="man in jacket and glasses"
+                  />
+                  <span
+                    class="dress-section__img-title dress-section__img-title--accept"
+                    >Formal</span
+                  >
+                </a>
+              </div>
+
+              <div class="dress-section__box">
+                <a class="dress-section__link" href="#">
+                  <img
+                    class="dress-section__img"
+                    width="684"
+                    height="289"
+                    srcset="./images/party.webp 1x, ./images/party@2x.webp 2x"
+                    src="./images/party.webp"
+                    alt="girl in a gray sweater"
+                  />
+                  <span class="dress-section__img-title">Party</span>
+                </a>
+                <a class="dress-section__link" href="#">
+                  <img
+                    class="dress-section__img"
+                    width="407"
+                    height="289"
+                    srcset="./images/gym.webp 1x, ./images/gym@2x.webp 2x"
+                    src="./images/gym.webp"
+                    alt="guy with a dumbbell in his hand"
+                  />
+                  <span class="dress-section__img-title">Gym</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section customers-section">
+        <div class="container">
+          <h2 class="section__title customers-section__title">
+            OUR HAPPY CUSTOMERS
+          </h2>
+          <div class="swiper mySwiper">
+            <ul class="customers-section__list swiper-wrapper">
+              <li class="customers-section__items swiper-slide">
+                <article class="customers-section__card">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#five-stars"></use>
+                  </svg>
+                  <div class="customers-section__title-box">
+                    <h3 class="customers-section__card-title">Sarah M.</h3>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="customers-section__card-description">
+                    "I'm blown away by the quality and style of the clothes I
+                    received from Shop.co. From casual wear to elegant dresses,
+                    every piece I've bought has exceeded my expectations.”
+                  </p>
+                </article>
+              </li>
+              <li class="customers-section__items swiper-slide">
+                <article class="customers-section__card">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#five-stars"></use>
+                  </svg>
+                  <div class="customers-section__title-box">
+                    <h3 class="customers-section__card-title">Alex K.</h3>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="customers-section__card-description">
+                    "Finding clothes that align with my personal style used to
+                    be a challenge until I discovered Shop.co. The range of
+                    options they offer is truly remarkable, catering to a
+                    variety of tastes and occasions.”
+                  </p>
+                </article>
+              </li>
+              <li class="customers-section__items swiper-slide">
+                <article class="customers-section__card">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#five-stars"></use>
+                  </svg>
+                  <div class="customers-section__title-box">
+                    <h3 class="customers-section__card-title">James L.</h3>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="customers-section__card-description">
+                    "As someone who's always on the lookout for unique fashion
+                    pieces, I'm thrilled to have stumbled upon Shop.co. The
+                    selection of clothes is not only diverse but also on-point
+                    with the latest trends.”
+                  </p>
+                </article>
+              </li>
+              <li class="customers-section__items swiper-slide">
+                <article class="customers-section__card">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#five-stars"></use>
+                  </svg>
+                  <div class="customers-section__title-box">
+                    <h3 class="customers-section__card-title">Sarah M.</h3>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="customers-section__card-description">
+                    "I'm blown away by the quality and style of the clothes I
+                    received from Shop.co. From casual wear to elegant dresses,
+                    every piece I've bought has exceeded my expectations.”
+                  </p>
+                </article>
+              </li>
+              <li class="customers-section__items swiper-slide">
+                <article class="customers-section__card">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#five-stars"></use>
+                  </svg>
+                  <div class="customers-section__title-box">
+                    <h3 class="customers-section__card-title">Alex K.</h3>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="customers-section__card-description">
+                    "Finding clothes that align with my personal style used to
+                    be a challenge until I discovered Shop.co. The range of
+                    options they offer is truly remarkable, catering to a
+                    variety of tastes and occasions.”
+                  </p>
+                </article>
+              </li>
+              <li class="customers-section__items swiper-slide">
+                <article class="customers-section__card">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#five-stars"></use>
+                  </svg>
+                  <div class="customers-section__title-box">
+                    <h3 class="customers-section__card-title">James L.</h3>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="customers-section__card-description">
+                    "As someone who's always on the lookout for unique fashion
+                    pieces, I'm thrilled to have stumbled upon Shop.co. The
+                    selection of clothes is not only diverse but also on-point
+                    with the latest trends.”
+                  </p>
+                </article>
+              </li>
+            </ul>
+            <div class="swiper-button-next btn-customers-next"></div>
+            <div class="swiper-button-prev btn-customers-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__offers-container">
+          <h2 class="footer__offers-title">
+            STAY UPTO DATE ABOUT OUR LATEST OFFERS
+          </h2>
+          <form
+            class="footer__input-block"
+            name="offers-form"
+            autocomplete="off"
+          >
+            <div class="footer__input-box">
+              <label class="visually-hidden" for="user-email"
+                >Enter your email address</label
+              >
+              <svg class="footer__icon-email" width="24" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              <input
+                id="user-email"
+                type="email"
+                class="footer__input-email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <button class="btn-subscribe btn-subscribe--accept" type="submit">
+              Subscribe to Newsletter
+            </button>
+          </form>
+        </div>
+
+        <div class="footer__middle-container">
+          <div class="footer__info-block">
+            <a class="footer__logo" href="./home.html">SHOP.CO</a>
+            <p class="footer__logo-description">
+              We have clothes that suits your style and<br />
+              which you’re proud to wear. From<br />
+              women to men.
+            </p>
+            <div class="footer__icons-container">
+              <a
+                class="twitter-link twitter-link--social"
+                href="#"
+                aria-label="Go to Twitter profile"
+              >
+                <svg width="12" height="12">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a
+                class="facebook-link facebook-link--accept facebook-link--social"
+                href="#"
+                aria-label="Go to facebook profile"
+              >
+                <svg width="6.32" height="12.7" fill="#fff">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a
+                class="instagram-link instagram-link--social"
+                href="#"
+                aria-label="Go to Instagram profile"
+              >
+                <svg width="13.55" height="13.55">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a
+                class="git-hub-link git-hub-link--social"
+                href="#"
+                aria-label="Go to git-hub profile"
+              >
+                <svg width="12.96" height="12.65">
+                  <use href="./images/icons.svg#icon-git-hub"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__nav-block">
+            <div class="footer__nav-box">
+              <nav class="footer__nav">
+                <h3 class="footer__nav-title">Company</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">About</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Features</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Works</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Career</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__nav footer__nav--accept">
+                <h3 class="footer__nav-title">Help</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">Customer Support</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Delivery Details</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__nav-box">
+              <nav class="footer__nav">
+                <h3 class="footer__nav-title">FAQ</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">Account</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Manage Deliveries</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Orders</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Payments</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__nav">
+                <h3 class="footer__nav-title">Resources</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">Free eBooks</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Development Tutorial</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">How to - Blog</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Youtube Playlist</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__terms">
+            Shop.co &copy;2000-2023, All Rights Reserved
+          </p>
+          <div class="footer__cards-block">
+            <div class="footer__cards-bank">
+              <svg width="32.54" height="10.51" role="img" aria-label="Visa">
+                <use href="./images/icons.svg#visa"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg
+                width="25.38"
+                height="15.69"
+                role="img"
+                aria-label="Mastercard"
+              >
+                <use href="./images/icons.svg#mastercard"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg width="34.55" height="9.21" role="img" aria-label="Paypal">
+                <use href="./images/icons.svg#paypal"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg
+                width="26.41"
+                height="11.21"
+                role="img"
+                aria-label="Apple Pay"
+              >
+                <use href="./images/icons.svg#apple-pay"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg width="28.56" height="11.21" role="img" aria-label="G-pay">
+                <use href="./images/icons.svg#g-pay"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close" type="button" data-toggle=".backdrop">
+          <svg width="13.3" height="13.3">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Sign Up</h2>
+        <form class="modal__form" name="modal-form" autocomplete="off">
+          <div class="modal__container">
+            <label class="modal__lable" for="sing-up-email"
+              >Email or phone</label
+            >
+            <input
+              class="modal__input"
+              type="text"
+              id="sing-up-email"
+              name="sing-up-email"
+              minlength="3"
+              maxlength="20"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+            <span class="modal__text"
+              >Наприклад: my@email.com або 380XXXXXXXXX / 48XXXXXXXXX</span
+            >
+            <label class="modal__lable" for="sing-up-password">Password</label>
+            <input
+              class="modal__input"
+              type="password"
+              id="sing-up-password"
+              name="sing-up-password"
+              minlength="3"
+              maxlength="20"
+              required
+            />
+          </div>
+          <button class="modal__sing-up-btn sing-up-btn" type="submit">
+            Sing Up
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop-user is-hidden" role="dialog" aria-modal="true">
+      <div class="modal-user">
+        <button
+          class="modal-user__btn-close"
+          data-toggle=".backdrop-user"
+          type="button"
+        >
+          <svg width="15" height="15">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-user__title">Personal account</h2>
+        <form name="modal-user-form" autocomplete="off">
+          <div class="modal-user__form-field">
+            <label class="modal-user__label" for="user-name">E-mail:</label>
+            <input
+              type="email"
+              class="modal-user__email"
+              id="user-name"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="modal-user__form-field">
+            <label class="modal-user__label" for="user-password"
+              >Password:</label
+            >
+            <input
+              type="password"
+              class="modal-user__password"
+              id="user-password"
+              placeholder="password"
+              required
+            />
+          </div>
+
+          <button class="modal-user__btn-enter" type="submit">Enter</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./js/black-line.js"></script>
+    <script type="module" src="./js/header-dropdown.js"></script>
+    <script type="module" src="./js/mobile-menu-shop-btn.js"></script>
+    <script type="module" src="./js/open-close.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/customer-slide.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+@use "../utils/variables";
+.product-sizes {
+  display: flex;
+  flex-direction: column;
+  &::after {
+    content: "";
+    width: 100%;
+    max-width: 590px;
+    height: 2px;
+    background-color: variables.$color-four;
+    display: block;
+    margin: 20px 0;
+  }
+
+  &__title {
+    color: variables.$color-one;
+    opacity: 0.6;
+    margin-bottom: 16px;
+    font-size: clamp(14px, 1.5vw, 16px);
+  }
+
+  &__list {
+    display: flex;
+    gap: clamp(8px, 1vw, 12px);
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+
+  &__input:focus + &__label {
+    outline: 2px solid variables.$color-one;
+    outline-offset: 2px;
+  }
+
+  &__label {
+    padding: clamp(10px, 1vw, 12px) clamp(14px, 2vw, 24px);
+    font-size: clamp(14px, 1.5vw, 16px);
+    border-radius: 62px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: variables.$color-fife;
+    color: variables.$color-six;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: variables.$color-one;
+        color: variables.$color-two;
+      }
+    }
+  }
+
+  &__input:checked + &__label {
+    background-color: variables.$color-one;
+    color: variables.$color-two;
+  }
+}

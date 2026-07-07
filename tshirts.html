@@ -1,0 +1,1522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-shirts</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__promo">
+        <div class="container">
+          <div class="header__promo-container">
+            <div class="header__promo-block">
+              <p class="header__offer">
+                Sign up and get 20% off to your first order.
+              </p>
+              <button class="btn-sign-up" type="button" data-toggle=".backdrop">
+                Sign Up Now
+              </button>
+            </div>
+            <button
+              class="btn-close promo-btn-close"
+              type="button"
+              aria-label="Закрити"
+            >
+              <svg width="13.3" height="13.3">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__container">
+          <button
+            class="header__burger"
+            type="button"
+            data-toggle=".mobile-menu"
+          >
+            <svg class="header__burger-icon" width="18.75" height="14.25">
+              <use href="./images/icons.svg#menu-burger"></use>
+            </svg>
+          </button>
+          <a class="header__logo-site" href="./home.html">SHOP.CO</a>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__dropdown-block">
+                <button
+                  class="header__btn-dropdown"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="shop-menu"
+                >
+                  Shop
+
+                  <svg class="header__dropdown-icon" width="11.5" height="6.5">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </button>
+
+                <ul id="shop-menu" class="header__dropdown-menu" hidden>
+                  <li class="header__submenu-item">
+                    <button class="header__submenu-btn" type="button">
+                      Men
+
+                      <svg class="header__submenu-icon" width="6" height="10">
+                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                      </svg>
+                    </button>
+
+                    <ul class="header__submenu" hidden>
+                      <li>
+                        <a class="header__submenu-link" href="./tshirts.html">T-Shirts</a>
+                      </li>
+                      <li>
+                        <a class="header__submenu-link" href="#">Hoodies</a>
+                      </li>
+                      <li>
+                        <a class="header__submenu-link" href="#">Jeans</a>
+                      </li>
+                      <li>
+                        <a class="header__submenu-link" href="#">Shoes</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="header__dropdown-link" href="#">Girl</a>
+                  </li>
+
+                  <li>
+                    <a class="header__dropdown-link" href="#">Children</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a class="header__link" href="#">On Sale</a></li>
+              <li><a class="header__link" href="#">New Arrivals</a></li>
+              <li><a class="header__link" href="#">Brands</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <form name="search-form" class="search__form">
+              <button class="search__btn" type="submit" aria-label="search">
+                <svg class="search__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-search"></use>
+                </svg>
+              </button>
+              <label class="visually-hidden" for="search-input"
+                >Search for products</label
+              >
+              <input
+                type="search"
+                class="search__input"
+                id="search-input"
+                placeholder="Search for products..."
+              />
+            </form>
+          </div>
+
+          <div class="header__icon-block">
+            <button
+              class="header__btn-search"
+              type="button"
+              data-toggle=".search-sidebar"
+            >
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+            <a href="./cart.html" class="header__btn-cart" aria-label="cart">
+              <svg width="22.13" height="20.25">
+                <use href="./images/icons.svg#icon-cart"></use>
+              </svg>
+            </a>
+            <button
+              class="header__btn-user"
+              type="button"
+              aria-label="user"
+              data-toggle=".backdrop-user"
+            >
+              <svg width="20.25" height="20.25">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </button>
+          </div>
+
+          <!-- ----------------------------------- -->
+          <div class="mobile-menu is-hidden">
+            <button
+              class="mobile-menu__btn-close menu-btn-close"
+              type="button"
+              data-toggle=".mobile-menu"
+            >
+              <svg class="mobile-menu__mobile-icon" width="15" height="15">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="mobile-menu__logo-mobile" href="./home.html">SHOP.CO</a>
+
+            <nav class="mobile-menu__nav">
+              <ul class="mobile-menu__menu">
+                <li class="mobile-menu__item">
+                  <button
+                    class="mobile-menu__link mobile-menu__shop-btn"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    Shop
+
+                    <svg class="mobile-menu__arrow" width="11.5" height="6.5">
+                      <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+
+                  <ul class="mobile-menu__submenu" hidden>
+                    <li class="mobile-menu__submenu-item">
+                      <button
+                        class="mobile-menu__submenu-btn"
+                        type="button"
+                        aria-expanded="false"
+                      >
+                        Men
+
+                        <svg
+                          class="mobile-menu__arrow"
+                          width="11.5"
+                          height="6.5"
+                        >
+                          <use href="./images/icons.svg#icon-Vector"></use>
+                        </svg>
+                      </button>
+
+                      <ul class="mobile-menu__subsubmenu" hidden>
+                        <li>
+                          <a class="mobile-menu__sublink" href="./tshirts.html">
+                            T-Shirts
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="mobile-menu__sublink" href="#"> Hoodies </a>
+                        </li>
+
+                        <li>
+                          <a class="mobile-menu__sublink" href="#"> Jeans </a>
+                        </li>
+
+                        <li>
+                          <a class="mobile-menu__sublink" href="#"> Shoes </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a class="mobile-menu__sublink" href="#"> Girl </a>
+                    </li>
+
+                    <li>
+                      <a class="mobile-menu__sublink" href="#"> Children </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a class="mobile-menu__link link" href="#"> On Sale </a>
+                </li>
+
+                <li>
+                  <a class="mobile-menu__link link" href="#"> New Arrivals </a>
+                </li>
+
+                <li>
+                  <a class="mobile-menu__link link" href="#"> Brands </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- --------------------------------------- -->
+        </div>
+      </div>
+      <!-- слайдер пошук -->
+      <div class="search-sidebar is-hidden">
+        <form name="search-sidebar" autocomplete="off">
+          <div class="search-sidebar__form-field">
+            <button class="search-sidebar__btn-search" type="submit">
+              <svg width="22" height="22">
+                <use href="./images/icons.svg#icon-search"></use>
+              </svg>
+            </button>
+            <label
+              class="search-sidebar__label visually-hidden"
+              for="search-product"
+              >Search product</label
+            >
+            <input
+              class="search-sidebar__input"
+              id="search-product"
+              placeholder="Search product"
+              type="search"
+            />
+            <button
+              class="btn-close search-sidebar__btn-close"
+              data-toggle=".search-sidebar"
+              type="button"
+            >
+              <svg width="18" height="18">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- слайдер пошук -->
+    </header>
+    <main>
+      <section class="section t-shirt-section">
+        <div class="container">
+          <div class="t-shirt-section__container">
+            <div class="product-gallery">
+              <ul class="product-gallery__thumbs">
+                <li>
+                  <img
+                    class="product-gallery__thumb product-gallery__thumb--active"
+                    src="./images/one-life-one.webp"
+                    data-large="./images/one-life-front-large.webp"
+                    data-large-2x="./images/one-life-front-large@2x.webp"
+                    alt="Front side"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="product-gallery__thumb"
+                    src="./images/one-life-two.webp"
+                    data-large="./images/one-life-back-large.webp"
+                    data-large-2x="./images/one-life-back-large@2x.webp"
+                    alt="Back side"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="product-gallery__thumb"
+                    src="./images/one-life-three.webp"
+                    data-large="./images/one-life-side-large.webp"
+                    data-large-2x="./images/one-life-side-large@2x.webp"
+                    alt="Side view"
+                  />
+                </li>
+              </ul>
+              <div class="product-gallery__main">
+                <img
+                  class="product-gallery__main-img"
+                  width="444"
+                  height="530"
+                  srcset="
+                    ./images/one-life-hero.webp    1x,
+                    ./images/one-life-hero@2x.webp 2x
+                  "
+                  src="./images/one-life-hero.webp"
+                  alt="One Life Graphic T-shirt"
+                />
+              </div>
+            </div>
+            <div class="t-shirt-section__block">
+              <h2 class="t-shirt-section__title">One Life Graphic T-shirt</h2>
+              <div class="rating">
+                <svg class="rating__icon" fill="#FFC633">
+                  <use href="./images/icons.svg#four-starshaf"></use>
+                </svg>
+                <span class="rating__value"
+                  >4.5/<span class="rating__accept">5</span></span
+                >
+              </div>
+              <div class="price t-shirt-section__price-box">
+                <span class="price__price">$260</span>
+                <span class="price__price price__price--old">$300</span>
+                <span class="price__discount">-40%</span>
+              </div>
+              <p class="t-shirt-section__description">
+                This graphic t-shirt which is perfect for any occasion. Crafted
+                from a soft and breathable fabric, it offers superior comfort
+                and style.
+              </p>
+              <div class="product-colors">
+                <p class="product-colors__title">Select Colors</p>
+                <div class="product-colors__list">
+                  <input
+                    class="product-colors__input"
+                    type="radio"
+                    name="color"
+                    id="color-brown"
+                  />
+                  <label
+                    class="product-colors__label product-colors__label--brown"
+                    for="color-brown"
+                    aria-label="Brown"
+                  ></label>
+
+                  <input
+                    class="product-colors__input"
+                    type="radio"
+                    name="color"
+                    id="color-dark-green"
+                  />
+                  <label
+                    class="product-colors__label product-colors__label--dark-green"
+                    for="color-dark-green"
+                    aria-label="dark-green"
+                  ></label>
+
+                  <input
+                    class="product-colors__input"
+                    type="radio"
+                    name="color"
+                    id="color-dark-blue"
+                  />
+                  <label
+                    class="product-colors__label product-colors__label--dark-blue"
+                    for="color-dark-blue"
+                    aria-label="blue"
+                  ></label>
+                </div>
+              </div>
+              <div class="product-sizes">
+                <p class="product-sizes__title">Choose Size</p>
+                <div class="product-sizes__list">
+                  <input
+                    class="product-sizes__input"
+                    type="radio"
+                    name="size"
+                    id="size-small"
+                  />
+                  <label class="product-sizes__label" for="size-small"
+                    >Small</label
+                  >
+
+                  <input
+                    class="product-sizes__input"
+                    type="radio"
+                    name="size"
+                    id="size-medium"
+                  />
+                  <label class="product-sizes__label" for="size-medium"
+                    >Medium</label
+                  >
+
+                  <input
+                    class="product-sizes__input"
+                    type="radio"
+                    name="size"
+                    id="size-large"
+                  />
+                  <label class="product-sizes__label" for="size-large"
+                    >Large</label
+                  >
+
+                  <input
+                    class="product-sizes__input"
+                    type="radio"
+                    name="size"
+                    id="size-x-large"
+                  />
+                  <label class="product-sizes__label" for="size-x-large"
+                    >X-Large</label
+                  >
+                </div>
+              </div>
+              <form
+                class="t-shirt-section__product-count"
+                name="count-form"
+                autocomplete="off"
+              >
+                <div class="plus-minus-container">
+                  <button
+                    class="plus-minus-container__count-minus"
+                    type="button"
+                    aria-label="Decrease quantity"
+                  >
+                    <svg width="18.75" height="2.25">
+                      <use href="./images/icons.svg#icon-minus"></use>
+                    </svg>
+                  </button>
+                  <label class="visually-hidden" for="quantity"
+                    >choose quantity</label
+                  >
+                  <input
+                    class="plus-minus-container__quantity-input"
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="5"
+                    id="quantity"
+                    name="quantity"
+                    required
+                    step="1"
+                  />
+                  <button
+                    class="plus-minus-container__count-plus"
+                    type="button"
+                    aria-label="Increase quantity"
+                  >
+                    <svg width="18.75" height="18.75">
+                      <use href="./images/icons.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn-add-to-cart" type="submit">
+                  Add to Cart
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product-tabs-section">
+        <div class="container">
+          <h2 class="visually-hidden">Product-Tabs</h2>
+          <div class="product-tabs-section__button-tabs-container">
+            <button
+              class="product-tabs-section__btn-tabs"
+              type="button"
+              data-tab="details"
+            >
+              Product Details
+            </button>
+            <button
+              class="product-tabs-section__btn-tabs product-tabs-section__btn-tabs--active"
+              type="button"
+              data-tab="reviews"
+            >
+              Rating & Reviews
+            </button>
+            <button
+              class="product-tabs-section__btn-tabs"
+              type="button"
+              data-tab="faq"
+            >
+              FAQs
+            </button>
+          </div>
+          <div
+            class="product-tabs-section__all-reviews-container"
+            data-content="details"
+          >
+            <div class="product-tabs-section__reviews-nav">
+              <div class="product-tabs-section__reviews-box">
+                <h3 class="product-tabs-section__reviews-title">All Reviews</h3>
+                <span class="product-tabs-section__reviews-counts">(451)</span>
+              </div>
+              <button
+                class="btn-filter product-tabs-section__reviews-btn-filter"
+                type="button"
+              >
+                <svg width="20.25" height="18.75">
+                  <use href="./images/icons.svg#icon-filter"></use>
+                </svg>
+              </button>
+              <div class="dropdown-latest dropdown-latest--delete">
+                <button
+                  class="dropdown-latest__btn-latest"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="latest-menu"
+                >
+                  Latest
+                  <svg
+                    class="dropdown-latest__dropdown-icon"
+                    width="11.5"
+                    height="6.5"
+                  >
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </button>
+                <ul id="latest-menu" class="dropdown-latest__menu" hidden>
+                  <li>
+                    <a class="dropdown-latest__link" href="#">Category 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-latest__link" href="#">Category 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-latest__link" href="#">Category 3</a>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn-write-review" type="button">
+                Write a Review
+              </button>
+            </div>
+            <ul class="product-tabs-section__all-reviews-list">
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-starshaf"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">
+                      Samantha D.
+                    </h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "I absolutely love this t-shirt! The design is unique and
+                    the fabric feels so comfortable. As a fellow designer, I
+                    appreciate the attention to detail. It's become my favorite
+                    go-to shirt."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-14">===============</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-stars"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Alex M.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "The t-shirt exceeded my expectations! The colors are
+                    vibrant and the print quality is top-notch. Being a UI/UX
+                    designer myself, I'm quite picky about aesthetics, and this
+                    t-shirt definitely gets a thumbs up from me."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-15">+++++++++++++++</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#three-starshaf"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Ethan R.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "This t-shirt is a must-have for anyone who appreciates good
+                    design. The minimalistic yet stylish pattern caught my eye,
+                    and the fit is perfect. I can see the designer's touch in
+                    every aspect of this shirt."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-16">August 16, 2023</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-stars"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Olivia P.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "The t-shirt exceeded my expectations! The colors are
+                    vibrant and the print quality is top-notch. Being a UI/UX
+                    designer myself, I'm quite picky about aesthetics, and this
+                    t-shirt definitely gets a thumbs up from me."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-17">August 17, 2023</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-stars"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Liam K.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "This t-shirt is a fusion of comfort and creativity. The
+                    fabric is soft, and the design speaks volumes about the
+                    designer's skill. It's like wearing a piece of art that
+                    reflects my passion for both design and fashion."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-18">August 18, 2023</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-starshaf"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Ava H.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "I'm not just wearing a t-shirt; I'm wearing a piece of
+                    design philosophy. The intricate details and thoughtful
+                    layout of the design make this shirt a conversation
+                    starter."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-19">August 19, 2023</time>
+                  </p>
+                </article>
+              </li>
+            </ul>
+            <div class="product-tabs-section__load-more-box">
+              <button class="btn-load-more" type="button">
+                Load More Reviews
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="product-tabs-section__all-reviews-container product-tabs-section__all-reviews-container--active"
+            data-content="reviews"
+          >
+            <div class="product-tabs-section__reviews-nav">
+              <div class="product-tabs-section__reviews-box">
+                <h3 class="product-tabs-section__reviews-title">All Reviews</h3>
+                <span class="product-tabs-section__reviews-counts">(451)</span>
+              </div>
+              <button
+                class="btn-filter product-tabs-section__reviews-btn-filter"
+                type="button"
+              >
+                <svg width="20.25" height="18.75">
+                  <use href="./images/icons.svg#icon-filter"></use>
+                </svg>
+              </button>
+              <div class="dropdown-latest dropdown-latest--delete">
+                <button
+                  class="dropdown-latest__btn-latest"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="latest-menu"
+                >
+                  Latest
+                  <svg
+                    class="dropdown-latest__dropdown-icon"
+                    width="11.5"
+                    height="6.5"
+                  >
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </button>
+                <ul id="latest-menu" class="dropdown-latest__menu" hidden>
+                  <li>
+                    <a class="dropdown-latest__link" href="#">Category 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-latest__link" href="#">Category 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-latest__link" href="#">Category 3</a>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn-write-review" type="button">
+                Write a Review
+              </button>
+            </div>
+            <ul class="product-tabs-section__all-reviews-list">
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-starshaf"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">
+                      Samantha D.
+                    </h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "I absolutely love this t-shirt! The design is unique and
+                    the fabric feels so comfortable. As a fellow designer, I
+                    appreciate the attention to detail. It's become my favorite
+                    go-to shirt."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-14">August 14, 2023</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-stars"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Alex M.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "The t-shirt exceeded my expectations! The colors are
+                    vibrant and the print quality is top-notch. Being a UI/UX
+                    designer myself, I'm quite picky about aesthetics, and this
+                    t-shirt definitely gets a thumbs up from me."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-15">August 15, 2023</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#three-starshaf"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Ethan R.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "This t-shirt is a must-have for anyone who appreciates good
+                    design. The minimalistic yet stylish pattern caught my eye,
+                    and the fit is perfect. I can see the designer's touch in
+                    every aspect of this shirt."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-16">August 16, 2023</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-stars"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Olivia P.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "The t-shirt exceeded my expectations! The colors are
+                    vibrant and the print quality is top-notch. Being a UI/UX
+                    designer myself, I'm quite picky about aesthetics, and this
+                    t-shirt definitely gets a thumbs up from me."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-17">August 17, 2023</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-stars"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Liam K.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "This t-shirt is a fusion of comfort and creativity. The
+                    fabric is soft, and the design speaks volumes about the
+                    designer's skill. It's like wearing a piece of art that
+                    reflects my passion for both design and fashion."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-18">August 18, 2023</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-starshaf"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Ava H.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "I'm not just wearing a t-shirt; I'm wearing a piece of
+                    design philosophy. The intricate details and thoughtful
+                    layout of the design make this shirt a conversation
+                    starter."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-19">August 19, 2023</time>
+                  </p>
+                </article>
+              </li>
+            </ul>
+            <div class="product-tabs-section__load-more-box">
+              <button class="btn-load-more" type="button">
+                Load More Reviews
+              </button>
+            </div>
+          </div>
+          <div
+            class="product-tabs-section__all-reviews-container"
+            data-content="faq"
+          >
+            <div class="product-tabs-section__reviews-nav">
+              <div class="product-tabs-section__reviews-box">
+                <h3 class="product-tabs-section__reviews-title">All Reviews</h3>
+                <span class="product-tabs-section__reviews-counts">(451)</span>
+              </div>
+              <button
+                class="btn-filter product-tabs-section__reviews-btn-filter"
+                type="button"
+              >
+                <svg width="20.25" height="18.75">
+                  <use href="./images/icons.svg#icon-filter"></use>
+                </svg>
+              </button>
+              <div class="dropdown-latest dropdown-latest--delete">
+                <button
+                  class="dropdown-latest__btn-latest"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="latest-menu"
+                >
+                  Latest
+                  <svg
+                    class="dropdown-latest__dropdown-icon"
+                    width="11.5"
+                    height="6.5"
+                  >
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </button>
+                <ul id="latest-menu" class="dropdown-latest__menu" hidden>
+                  <li>
+                    <a class="dropdown-latest__link" href="#">Category 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-latest__link" href="#">Category 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-latest__link" href="#">Category 3</a>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn-write-review" type="button">
+                Write a Review
+              </button>
+            </div>
+            <ul class="product-tabs-section__all-reviews-list">
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-starshaf"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">
+                      Samantha D.
+                    </h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "I absolutely love this t-shirt! The design is unique and
+                    the fabric feels so comfortable. As a fellow designer, I
+                    appreciate the attention to detail. It's become my favorite
+                    go-to shirt."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-14">????????</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-stars"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Alex M.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "The t-shirt exceeded my expectations! The colors are
+                    vibrant and the print quality is top-notch. Being a UI/UX
+                    designer myself, I'm quite picky about aesthetics, and this
+                    t-shirt definitely gets a thumbs up from me."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-15">///////////</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#three-starshaf"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Ethan R.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "This t-shirt is a must-have for anyone who appreciates good
+                    design. The minimalistic yet stylish pattern caught my eye,
+                    and the fit is perfect. I can see the designer's touch in
+                    every aspect of this shirt."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-16">August 16, 2023</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-stars"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Olivia P.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "The t-shirt exceeded my expectations! The colors are
+                    vibrant and the print quality is top-notch. Being a UI/UX
+                    designer myself, I'm quite picky about aesthetics, and this
+                    t-shirt definitely gets a thumbs up from me."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-17">August 17, 2023</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-stars"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Liam K.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "This t-shirt is a fusion of comfort and creativity. The
+                    fabric is soft, and the design speaks volumes about the
+                    designer's skill. It's like wearing a piece of art that
+                    reflects my passion for both design and fashion."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-18">August 18, 2023</time>
+                  </p>
+                </article>
+              </li>
+              <li class="product-tabs-section__all-reviews-item">
+                <article class="product-tabs-section__all-reviews-card">
+                  <svg class="product-tabs-section__rating-icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-starshaf"></use>
+                  </svg>
+                  <div class="product-tabs-section__title-box">
+                    <h4 class="product-tabs-section__card-title">Ava H.</h4>
+                    <svg width="19" height="19" fill="#01AB31">
+                      <use href="./images/icons.svg#vector-coment"></use>
+                    </svg>
+                  </div>
+                  <p class="product-tabs-section__review">
+                    "I'm not just wearing a t-shirt; I'm wearing a piece of
+                    design philosophy. The intricate details and thoughtful
+                    layout of the design make this shirt a conversation
+                    starter."
+                  </p>
+                  <p class="product-tabs-section__post-date">
+                    Posted on
+                    <time datetime="2023-08-19">August 19, 2023</time>
+                  </p>
+                </article>
+              </li>
+            </ul>
+            <div class="product-tabs-section__load-more-box">
+              <button class="btn-load-more" type="button">
+                Load More Reviews
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section might-also-section">
+        <div class="container">
+          <h2 class="section__title might-also-section__title">
+            You might also like
+          </h2>
+          <ul class="might-also-section__list">
+            <li class="might-also-section__item">
+              <article class="card-shop">
+                <a class="card-shop__link" href="#">
+                  <img
+                    class="card-shop__img"
+                    width="295"
+                    height="298"
+                    srcset="
+                      ./images/contrast-trims.webp    1x,
+                      ./images/contrast-trims@2x.webp 2x
+                    "
+                    src="./images/contrast-trims.webp"
+                    alt="Polo with Contrast Trims"
+                  />
+                </a>
+                <h3 class="card-shop__title">Polo with Contrast Trims</h3>
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-stars"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >4.0/<span class="rating__accept">4</span></span
+                  >
+                </div>
+                <div class="price">
+                  <span class="price__price">$212</span>
+                  <span class="price__price price__price--old">$242</span>
+                  <span class="price__discount">-20%</span>
+                </div>
+              </article>
+            </li>
+            <li class="might-also-section__item">
+              <article class="card-shop">
+                <a class="card-shop__link" href="#">
+                  <img
+                    width="295"
+                    height="298"
+                    class="card-shop__img"
+                    srcset="
+                      ./images/gradient-graphic.webp    1x,
+                      ./images/gradient-graphic@2x.webp 2x
+                    "
+                    src="./images/gradient-graphic.webp"
+                    alt="Gradient Graphic T-shirt"
+                  />
+                </a>
+                <h3 class="card-shop__title">Gradient Graphic T-shirt</h3>
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#three-starshaf"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >3.5/<span class="rating__accept">5</span></span
+                  >
+                </div>
+                <div class="price">
+                  <span class="price__price">$145</span>
+                </div>
+              </article>
+            </li>
+            <li
+              class="might-also-section__item might-also-section__items--deleted"
+            >
+              <article class="card-shop">
+                <a class="card-shop__link" href="#">
+                  <img
+                    width="295"
+                    height="298"
+                    class="card-shop__img"
+                    srcset="
+                      ./images/tipping-details.webp    1x,
+                      ./images/tipping-details@2x.webp 2x
+                    "
+                    src="./images/tipping-details.webp"
+                    alt="Polo with Tipping Details"
+                  />
+                </a>
+                <h3 class="card-shop__title">Polo with Tipping Details</h3>
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#four-starshaf"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >4.5/<span class="rating__accept">5</span></span
+                  >
+                </div>
+                <div class="price">
+                  <span class="price__price">$180</span>
+                </div>
+              </article>
+            </li>
+            <li
+              class="might-also-section__item might-also-section__items--delete"
+            >
+              <article class="card-shop">
+                <a class="card-shop__link" href="#">
+                  <img
+                    class="card-shop__img"
+                    width="295"
+                    height="298"
+                    srcset="
+                      ./images/black-striped.webp    1x,
+                      ./images/black-striped@2x.webp 2x
+                    "
+                    src="./images/black-striped.webp"
+                    alt="Black Striped T-shirt"
+                  />
+                </a>
+                <h3 class="card-shop__title">Black Striped T-shirt</h3>
+                <div class="rating">
+                  <svg class="rating__icon" fill="#FFC633">
+                    <use href="./images/icons.svg#five-stars"></use>
+                  </svg>
+                  <span class="rating__value"
+                    >5.0/<span class="rating__accept">5</span></span
+                  >
+                </div>
+                <div class="price">
+                  <span class="price__price">$120</span>
+                  <span class="price__price price__price--old">$150</span>
+                  <span class="price__discount">-30%</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__offers-container">
+          <h2 class="footer__offers-title">
+            STAY UPTO DATE ABOUT OUR LATEST OFFERS
+          </h2>
+          <form
+            class="footer__input-block"
+            name="offers-form"
+            autocomplete="off"
+          >
+            <div class="footer__input-box">
+              <label class="visually-hidden" for="user-email"
+                >Enter your email address</label
+              >
+              <svg class="footer__icon-email" width="24" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              <input
+                id="user-email"
+                type="email"
+                class="footer__input-email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <button class="btn-subscribe btn-subscribe--accept" type="submit">
+              Subscribe to Newsletter
+            </button>
+          </form>
+        </div>
+
+        <div class="footer__middle-container">
+          <div class="footer__info-block">
+            <a class="footer__logo" href="./home.html">SHOP.CO</a>
+            <p class="footer__logo-description">
+              We have clothes that suits your style and<br />
+              which you’re proud to wear. From<br />
+              women to men.
+            </p>
+            <div class="footer__icons-container">
+              <a
+                class="twitter-link twitter-link--social"
+                href="#"
+                aria-label="Go to Twitter profile"
+              >
+                <svg width="12" height="12">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a
+                class="facebook-link facebook-link--accept facebook-link--social"
+                href="#"
+                aria-label="Go to facebook profile"
+              >
+                <svg width="6.32" height="12.7" fill="#fff">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a
+                class="instagram-link instagram-link--social"
+                href="#"
+                aria-label="Go to Instagram profile"
+              >
+                <svg width="13.55" height="13.55">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a
+                class="git-hub-link git-hub-link--social"
+                href="#"
+                aria-label="Go to git-hub profile"
+              >
+                <svg width="12.96" height="12.65">
+                  <use href="./images/icons.svg#icon-git-hub"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__nav-block">
+            <div class="footer__nav-box">
+              <nav class="footer__nav">
+                <h3 class="footer__nav-title">Company</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">About</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Features</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Works</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Career</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__nav footer__nav--accept">
+                <h3 class="footer__nav-title">Help</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">Customer Support</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Delivery Details</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__nav-box">
+              <nav class="footer__nav">
+                <h3 class="footer__nav-title">FAQ</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">Account</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Manage Deliveries</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Orders</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Payments</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__nav">
+                <h3 class="footer__nav-title">Resources</h3>
+                <ul class="footer__menu">
+                  <li>
+                    <a class="footer__link" href="#">Free eBooks</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Development Tutorial</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">How to - Blog</a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#">Youtube Playlist</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__terms">
+            Shop.co &copy;2000-2023, All Rights Reserved
+          </p>
+          <div class="footer__cards-block">
+            <div class="footer__cards-bank">
+              <svg width="32.54" height="10.51" role="img" aria-label="Visa">
+                <use href="./images/icons.svg#visa"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg
+                width="25.38"
+                height="15.69"
+                role="img"
+                aria-label="Mastercard"
+              >
+                <use href="./images/icons.svg#mastercard"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg width="34.55" height="9.21" role="img" aria-label="Paypal">
+                <use href="./images/icons.svg#paypal"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg
+                width="26.41"
+                height="11.21"
+                role="img"
+                aria-label="Apple Pay"
+              >
+                <use href="./images/icons.svg#apple-pay"></use>
+              </svg>
+            </div>
+            <div class="footer__cards-bank">
+              <svg width="28.56" height="11.21" role="img" aria-label="G-pay">
+                <use href="./images/icons.svg#g-pay"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close" type="button" data-toggle=".backdrop">
+          <svg width="13.3" height="13.3">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Sign Up</h2>
+        <form class="modal__form" name="modal-form" autocomplete="off">
+          <div class="modal__container">
+            <label class="modal__lable" for="sing-up-email"
+              >Email or phone</label
+            >
+            <input
+              class="modal__input"
+              type="text"
+              id="sing-up-email"
+              name="sing-up-email"
+              minlength="3"
+              maxlength="20"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+            <span class="modal__text"
+              >Наприклад: my@email.com або 380XXXXXXXXX / 48XXXXXXXXX</span
+            >
+            <label class="modal__lable" for="sing-up-password">Password</label>
+            <input
+              class="modal__input"
+              type="password"
+              id="sing-up-password"
+              name="sing-up-password"
+              minlength="3"
+              maxlength="20"
+              required
+            />
+          </div>
+          <button class="modal__sing-up-btn sing-up-btn" type="submit">
+            Sing Up
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- modal user -->
+    <div class="backdrop-user is-hidden" role="dialog" aria-modal="true">
+      <div class="modal-user">
+        <button
+          class="modal-user__btn-close"
+          data-toggle=".backdrop-user"
+          type="button"
+        >
+          <svg width="15" height="15">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-user__title">Personal account</h2>
+        <form name="modal-user-form" autocomplete="off">
+          <div class="modal-user__form-field">
+            <label class="modal-user__label" for="user-name">E-mail:</label>
+            <input
+              type="email"
+              class="modal-user__email"
+              id="user-name"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="modal-user__form-field">
+            <label class="modal-user__label" for="user-password"
+              >Password:</label
+            >
+            <input
+              type="password"
+              class="modal-user__password"
+              id="user-password"
+              placeholder="password"
+              required
+            />
+          </div>
+
+          <button class="modal-user__btn-enter" type="submit">Enter</button>
+        </form>
+      </div>
+    </div>
+    <!-- modal user -->
+    <script type="module" src="./js/black-line.js"></script>
+    <script type="module" src="./js/header-dropdown.js"></script>
+    <script type="module" src="./js/mobile-menu-shop-btn.js"></script>
+    <script type="module" src="./js/open-close.js"></script>
+    <script type="module" src="./js/gallery.js"></script>
+    <script type="module" src="./js/tabs-nav.js"></script>
+    <script type="module" src="./js/dropdown-menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+@use "../utils/variables";
+.search {
+  max-width: 400px;
+  width: 100%;
+  padding: 0 5px;
+  display: none;
+  @media screen and (min-width: variables.$bp-mobile) {
+    display: block;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 10px 14px 16px;
+    background-color: variables.$color-fife;
+    border-radius: 62px;
+    transition: box-shadow 0.2s ease;
+
+    &:focus-within {
+      box-shadow: 0 0 5px 5px variables.$color-three;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 22px;
+    height: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+
+  &__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    &::placeholder {
+      font-size: 14px;
+      color: variables.$color-one;
+      opacity: 60%;
+      @media screen and (min-width: variables.$bp-desktop) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__icon {
+    color: variables.$color-one;
+    opacity: 60%;
+  }
+}

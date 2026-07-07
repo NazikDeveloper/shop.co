@@ -1,0 +1,122 @@
+@use "../utils/variables";
+.product-colors {
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    width: 100%;
+    max-width: 590px;
+    height: 2px;
+    background-color: variables.$color-four;
+    display: block;
+    margin: 20px 0;
+  }
+
+  &__title {
+    color: variables.$color-one;
+    opacity: 0.6;
+    margin-bottom: 14px;
+    font-size: clamp(14px, 1.5vw, 16px);
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+
+  &__input:focus + &__label {
+    outline: 2px solid variables.$color-one;
+    outline-offset: 2px;
+  }
+
+  &__label {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--brown {
+      background-color: variables.$color-nine;
+    }
+
+    &--dark-green {
+      background-color: variables.$color-ten;
+    }
+
+    &--dark-blue {
+      background-color: variables.$color-eleven;
+    }
+    &--green {
+      background-color: variables.$color-twelve;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--red {
+      background-color: variables.$color-thirteen;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--yellow {
+      background-color: variables.$color-fourteen;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--orange {
+      background-color: variables.$color-fifteen;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--aqua {
+      background-color: variables.$color-sixteen;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--blue {
+      background-color: variables.$color-seventeen;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--purple {
+      background-color: variables.$color-eighteenth;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--pink {
+  background-color: variables.$color-nineteenth;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--white {
+      background-color: variables.$color-two;
+      border: 1px solid variables.$color-eight;
+    }
+
+    &--black {
+      background-color: variables.$color-one;
+    }
+  }
+
+  &__input:checked + &__label::after {
+    content: "✓";
+    color: variables.$color-two;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__input:checked + .white::after {
+    content: "✓";
+    color: variables.$color-one;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
