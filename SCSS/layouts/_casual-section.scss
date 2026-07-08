@@ -137,7 +137,7 @@
     background-color: variables.$color-fife;
     display: block;
     // margin-left: 50px;
-    margin-left: auto;
+    // margin-left: auto;
 
     @media screen and (min-width: variables.$bp-desktop) {
       display: none;
