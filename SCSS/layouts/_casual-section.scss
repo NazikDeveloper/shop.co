@@ -136,9 +136,11 @@
   &__btn-filter {
     background-color: variables.$color-fife;
     display: block;
+    margin-left: 40px;
 
     @media screen and (min-width: variables.$bp-desktop) {
       display: none;
+      margin: 0;
     }
   }
 
