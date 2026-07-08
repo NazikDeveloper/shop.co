@@ -8,8 +8,14 @@
   &__main-container {
     padding-top: 20px;
     display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    // align-items: flex-start;
+  @media screen and (min-width: variables.$bp-desktop) {
     justify-content: space-between;
     align-items: flex-start;
+  }
+
   }
 
   &__backdrop {
