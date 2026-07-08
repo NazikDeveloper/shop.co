@@ -50,6 +50,7 @@
     border: 1px solid variables.$color-one;
     background-color: transparent;
     cursor: pointer;
+    color: variables.$color-one;
 
     @media screen and (min-width: variables.$bp-mobile) {
       width: 36px;

@@ -21,6 +21,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    background-color: variables.$color-two;
   }
 
   &__btn-search {
@@ -44,6 +45,7 @@
     width: 100%;
     border: none;
     outline: none;
+    background-color: transparent;
   }
 
   &__btn-close.btn-close {
